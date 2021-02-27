@@ -3,12 +3,108 @@ body {
     font-family: 'Manrope', sans-serif;
     color: #18191F;
     box-sizing: border-box;
+    background-color: #D5FAFC;
 }
 
 h1, h2, h3, h4, p {
     margin: 0;
 }
 .container {
-    max-width: 1100px;
+    max-width: 1275px;
     margin: 0 auto;
+    
+}
+
+.left-side {
+    display: inline-block;
+    vertical-align: middle;
+    width: 705px; 
+    height: 628px;
+    background-color: #2EC5CE;
+}
+
+.left-side-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 246px; /* если здесь убрать margin-top то почему то не будет работать vertical-align бился с этим целый час так и не понял причину в интернете пишут что лучше использовать flex */
+    margin-left: 165px;
+    width: 445px;
+    height: 136px;       
+}
+
+.left-side-text h2{
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.left-side-text p{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+
+.right-side {
+    display: inline-block;
+    vertical-align: middle;
+    width: 570px;
+    height: 564px;
+    background-color: #FFFFFF;
+    margin-left: -3px;
+    margin-right: -1px;
+}
+.quotes {
+    margin-top: 40px;
+    margin-left: 450px;
+}
+
+.jenny {
+    width: 255px;
+    margin-top: 24px;
+    margin-left: 40px;
+
+}
+.jenny img {
+    vertical-align: middle;
+}
+
+.jenny-text {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 16px;
+}
+.jenny-text h4 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.jenny-text p {
+    font-size: 14px;
+    font-weight: 400;
+}
+.right-side-text {
+    font-size: 18px;
+    font-weight: 400;
+    width: 490px;
+    margin-top: 24px;
+    margin-left: 40px;
+}
+.right-side-bottom {
+    margin-top: 48px;
+    margin-left: 40px;
+}
+.right-side-bottom-img {
+    display: inline-block;
+}
+.right-side-bottom-img2-3 {
+    margin-left: 262px;
+    display: inline-block;
+}
+.right-side-bottom-img2 {
+    display: inline-block;
+    padding: 13px 16px;
+}
+.right-side-bottom-img3 {
+    display: inline-block;
+    padding: 13px 16px;
+    margin-left: 8px;
 }
