@@ -9,6 +9,20 @@ h1, h2, h3, h4, p {
     margin: 0;
 }
 .container {
-    max-width: 1100px;
+    max-width: 989px;
     margin: 0 auto;
 }
+
+.headline-img::before {
+    content: '';
+    display: block;
+    width: 540px;   
+    height: 540px;
+    background-color: #D5FAFC;
+    position: absolute;
+    border-radius: 270px;
+}
+.headline-img {
+
+}
+
