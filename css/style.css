@@ -1,7 +1,32 @@
 body {
     background-color: #e5e5e5;
-    font-family: Tahoma, sans-serif;
+    font-family: "GothamPro-Medium",sans-serif;
+    font-size: 12px;
+    background-color: #e5e5e5;
+    color: #181818;
 }
+.network-nav_img {
+    padding: 17px 0;
+}
+.network-nav_link {
+    padding: 19px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.network-nav_link:hover {
+    border-bottom: 2px solid #181818;
+}
+.network-nav_item {
+    
+}
+
+
+
+
+
+
+
+
 .network-menu {
     background-color: #ffffff;
     border-radius: 4px;
@@ -26,6 +51,4 @@ body {
     border-bottom: 0;
     border-radius: 4px;
 }
-img {
-    margin-right: 11px;
-}
+
