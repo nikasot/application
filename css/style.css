@@ -12,3 +12,21 @@ h1, h2, h3, h4, p {
     max-width: 1100px;
     margin: 0 auto;
 }
+.headline {
+    background-image: url(../img/background.jpg);
+    height: 500px;
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+div {
+    height: 260px;
+    background-color: #ffffff;
+    position: relative;
+}
+.headline-card {
+    width: 540px;
+    height: 460px;
+    background-color: #ffffff;
+    border: 1px solid black;
+}
