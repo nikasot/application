@@ -1,6 +1,6 @@
 body {
     background-color: #e5e5e5;
-    font-family: "GothamPro-Medium","GothamPro-Light","GothamPro-Bold",sans-serif;
+    font-family: "GothamPro-Medium",sans-serif;
     font-size: 12px;
     background-color: #e5e5e5;
     color: #181818;
@@ -65,12 +65,75 @@ color: #181818;
     margin-right: -0.5rem !important; 
     border-color: transparent;
     
-     
+}
+.top-person-menu {
+    height: 80px;
+    position: relative;
+}
+.top-person {
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    top: 5px;
+}
+.top-person2 {
+    display: inline-block;
+    position: relative;
+    top: 16px;
+    left: 45px;
+}
+.top-person-div {
+    margin-bottom: 4px;
+}
+.top-person-text1 {
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+    color: #181818;
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+.top-person-text2 {
+    display: inline;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #33181818 ;
+}
+.top-person-text3 {
+    font-family: "GothamPro-Light",sans-serif;
+    display: inline;
+    margin-top: 0;
+        font-size: 12px;
+    font-weight: 400;
+    color: #747474;
+    margin-right: 4px;
+
+}
+.top-person-text4 {
+    display: inline;
+    font-size: 12px;
+    font-weight: 500;
+    color: #02B033;
+    margin-right: 2px;
+}
+.dots {
+    
     
 }
-
-
-
+.dots-img {
+    margin-top: 9px;
+    margin-left: 45px;
+}
+.dots-text {
+    margin-left: 36px;
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #181818 ;
+    
+}
 
 
 
