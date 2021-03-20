@@ -1,7 +1,32 @@
 body {
     background-color: #e5e5e5;
-    font-family: "GothamPro-Medium",sans-serif;
+    font-family: ;
     font-size: 12px;
     background-color: #e5e5e5;
     color: #181818;
+}
+
+.container-1 {
+    background-image: url(/img/Background.jpg);
+    background-repeat: no-repeat;
+    /* padding: 64px 11px 0 82px; */
+    position: relative;
+    height: 800px;
+    width: 666px;
+
+}
+.container-1_wrapper {
+    position: absolute;
+    align-items: center;
+}
+.quote {
+    /* padding-top: 276px;
+    padding right: 111px; */
+    
+}
+.container-2 {
+    /* padding: 75px 91px 0 53px; */
+}
+label {
+    display: block;
 }
