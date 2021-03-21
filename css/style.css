@@ -1,32 +1,214 @@
 body {
+    font-family: 'Inter',sans-serif;
     background-color: #e5e5e5;
-    font-family: ;
     font-size: 12px;
-    background-color: #e5e5e5;
     color: #181818;
+    box-sizing: border-box;
 }
-
+h1, h2, p {
+    margin: 0;
+}
 .container-1 {
     background-image: url(/img/Background.jpg);
     background-repeat: no-repeat;
-    /* padding: 64px 11px 0 82px; */
     position: relative;
-    height: 800px;
+    height: 100vh;
     width: 666px;
 
 }
-.container-1_wrapper {
+.container-1_img {
     position: absolute;
-    align-items: center;
+    top: 64px;
+    left: 82px;
+}
+
+
+.container-1_wraper {
+    position: absolute;
+    top: 50%;
+    margin-top: -137px;
+    left: 50%;
+    margin-left: -236px;
+    
+      
 }
 .quote {
+    width: 473px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffffff;
     /* padding-top: 276px;
     padding right: 111px; */
     
 }
-.container-2 {
-    /* padding: 75px 91px 0 53px; */
+.container-1_img2 {
+    position: absolute;
+    right: 0;
 }
+
+.container-2 {
+    background-color: #ffffff;
+    padding: 75px 93px 0px 53px;
+}
+.container-2_register_back {
+    margin-left: -4px;
+    cursor: pointer;
+}
+.container-2_register_back span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #8692A6;
+}
+.container-2_register_back img,
+.container-2_register_back span {
+    vertical-align: middle;
+}
+
+.container-2_register_back span {
+    padding-left: 14px;
+}
+
+.container-2_right {
+    font-weight: 500;
+    font-size: 14px;
+    color: #bdbdbd;
+    text-transform: uppercase;
+}
+
+.container-2_info {
+    font-weight: 600;
+    font-size: 16px;
+    color: #8692A6;
+    
+}
+
+.container-2 h2 {
+    width: 427px;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.container-2 p {
+    width: 411px;
+    font-weight: normal;
+    font-size: 18px;
+    color: #696F79;
+    margin-bottom: 40px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f5f5f5;
+}
+.register-text {
+    padding-top: 99px;
+    width: 774px;
+}
+
 label {
     display: block;
+    margin-bottom: 14px;
+}
+
+input {
+    display: block;
+    width: 426px;
+    padding: 24px 24px 24px 30px;
+    margin-bottom: 24px;
+    border: 1px solid#8692A6;
+    box-sizing: border-box;
+    border-radius: 6px;
+    outline: none; 
+    color: #494949;
+    font-weight: 500;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    transition: .3s;
+}
+
+input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8692A6;
+}
+
+input:hover,
+input:focus {
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+    border-color: #1565D8;
+    transition: .3s;
+}
+.container-2_conditions{
+    margin-bottom: 30px;
+    position: relative;
+}
+.container-2_conditions label{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+    display: block;
+    
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.checkmark {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    height: 18px;
+    width: 18px;
+    background-color: #eee;
+    border-radius: 4px;
+    border: 1px solid#8692A6;
+}
+.container-2_conditions:hover .checkmark,
+.checkmark:hover {
+    border-color: #1565D8;
+    transition: .3s;
+}
+
+.container-2_conditions input:checked {
+    background-color: #1565D8;
+
+}
+
+.container-2_conditions .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-2_conditions input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container-2_conditions .checkmark:after {
+    left: 9px;
+    top: 2px;
+    width: 4px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+input[type="checkbox"] {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    vertical-align: middle;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    left: 0;
 }
