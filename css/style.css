@@ -1,7 +1,21 @@
 body {
     background-color: #e5e5e5;
-    font-family: "GothamPro-Medium",sans-serif;
+    font-family: "Manrope",sans-serif;
     font-size: 12px;
     background-color: #e5e5e5;
     color: #181818;
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.experience-title {
+    font-weight: 800;
+    font-size: 48px;
+    width: 600px;
+    line-height: 64px;
 }
