@@ -8,14 +8,33 @@ body {
 h1, h2, h3, h4, p {
     margin: 0;
 }
-.container {
-    width: 1110px;
-    margin: 0 auto;
+.experience {
+    padding: 64px 0;
 }
-
+.container {
+    /* width: 1110px; */
+    margin: 0 auto;
+    
+}
+.experience-block {
+    background-color: aqua;
+}
 .experience-title {
     font-weight: 800;
     font-size: 48px;
     width: 600px;
     line-height: 64px;
+    margin-bottom: 40px;
+    
+}
+.experience-item {
+    width: 255px;
+    display: inline-block;
+    margin-right: -6px;
+}
+.ml-30px {
+    margin-left: 30px;
+}
+img {
+    border-radius: 4px;
 }
