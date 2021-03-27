@@ -1,8 +1,7 @@
 body {
-    background-color: #e5e5e5;
+    background-color: #F7F9FB;
     font-family: "GothamPro-Medium",sans-serif;
     font-size: 12px;
-    background-color: #e5e5e5;
     color: #181818;
 }
 .align-items-center {
@@ -145,7 +144,9 @@ color: #181818;
 
 
 
+.network-menu_row{
 
+}
 .network-menu {
     width: 290px;
     background-color: #ffffff;
@@ -174,11 +175,14 @@ color: #181818;
 .invite {
     height: 95px;
     width: 100%;
+    box-sizing: 4px;
+    border-color: transparent;
+    margin-bottom: 10px;
 }
 .invite-img {
     /* width: 114px; */
     display: inline-block;
-    margin: 20px 15px 23px 30px;
+    margin: 20px 15px 23px 25px;
 }
 .invite-name-text {
     position: relative;
@@ -188,6 +192,8 @@ color: #181818;
     height: 56px;
     display: inline-block;
     vertical-align: auto;
+    margin-left: 5px;
+    margin-right: -5px;
 }
 .card-title {
     font-size: 14px;
@@ -210,10 +216,8 @@ color: #181818;
     width: 317px;
     height: 45px;
     display: inline-block;
-    padding-left: 15px;
     border-left: #0275B1 solid 2px;
-    margin-left: 50px;
-    margin-top: 18px;
+    margin-top: 20px;
 }
 .card-body-text {
     font-family: "GothamPro-Light",sans-serif;
@@ -224,11 +228,11 @@ color: #181818;
 .invite-button {
     position: relative;
     display: inline-block;
-    margin-left: 44px;
-    top: -15px;
+    /* margin-left: 44px; */
+    margin: auto 0;
     
 }
-.btn-accept {
+.btn_accept {
     width: 91px;
     height: 32px;
     background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
@@ -237,10 +241,23 @@ color: #181818;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-
-
 }
-.btn-decline{
+.btn_accept:hover {
+    box-shadow: 0 0 0 0.16rem rgba(4, 86, 128, 0.28);
+}
+.btn_accept:focus {
+    box-shadow: 0 0 0 0.1rem rgba(4, 86, 128, 0.7);
+}
+.btn_accept:active {
+    box-shadow: 0 0 0 0.1rem rgba(4, 86, 128, 0.7);
+}
+.btn_accept:active:focus {
+    box-shadow: 0 0 0 0.1rem rgba(4, 86, 128, 0.7) !important;
+}
+
+
+.btn_decline{
+    /* position: absolute; */
     width: 91px;
     height: 32px;
     background: transparent;
@@ -251,7 +268,28 @@ color: #181818;
     text-transform: uppercase;
     color: #B7B7B7;
     margin-left: 15px;
+    /* right: 0%; */
     
 }
-
+.btn_decline:hover {
+    color: #B7B7B7;
+    background: transparent;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0 0 0 0.16rem rgba(4, 86, 128, 0.28);
+}
+.btn_decline:focus {
+    color: #B7B7B7;
+    background-color: transparent;
+    border: 1px solid #E7E7E7;
+    box-shadow: 0 0 0 0.1rem rgba(4, 86, 128, 0.7);
+}
+.btn_decline:active {
+    color: #B7B7B7 !important;
+    background-color: transparent !important;
+    border: 1px solid #E7E7E7 !important;
+    box-shadow: 0 0 0 0.1rem rgba(4, 86, 128, 0.7);
+}
+.btn_decline:active:focus {
+    box-shadow: 0 0 0 0.1rem rgba(4, 86, 128, 0.7) !important;
+}
 
