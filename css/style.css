@@ -11,6 +11,9 @@ body {
     background: #FFFFFF;
 
 }
+.network {
+    margin-bottom: 39px;
+}
 .network-nav-icon {
     height: 24px;
     width: 24px;
@@ -172,6 +175,71 @@ color: #181818;
     border-bottom: 0;
     border-radius: 4px;
 }
+.btn_group_request {
+    height: 50px;
+}
+.btn_received {
+    width: 240px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    color: #181818;
+    border-radius: 0;
+}
+.btn_received:hover {
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    height: 50px;
+    border: transparent;
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px;
+}
+.btn_received:focus {
+    box-shadow: none;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    height: 50px;
+    border: transparent;
+    border-top-right-radius: 4px !important;
+    border-top-left-radius: 4px;
+}
+.btn_received:active {
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+}
+.btn_received:active:focus {
+    box-shadow: none !important;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%) !important;
+}
+
+.btn_sent {
+    width: 240px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    color: #181818;
+    border-radius: 0;
+}
+.btn_sent:hover {
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    height: 50px;
+    border: transparent;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px !important;
+}
+.btn_sent:focus {
+    box-shadow: none;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+    height: 50px;
+    border: transparent;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px !important;
+}
+.btn_sent:active {
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
+}
+.btn_sent:active:focus {
+    box-shadow: none !important;
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%) !important;
+}
+
 .invite {
     height: 95px;
     width: 100%;
