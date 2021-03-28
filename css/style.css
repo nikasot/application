@@ -239,6 +239,54 @@ color: #181818;
     box-shadow: none !important;
     background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%) !important;
 }
+.hr_connections {
+    height: 50px;
+    font-size: 12px;
+    line-height: 11px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 29px;
+}
+.hr_connections_bottom {
+    width: 100%;
+    padding-right: 0;
+}
+.hr_connections_text {
+    width: 208px;
+    
+}
+.hr_connections_text_1 {
+    display: inline-block;
+    margin-bottom: 0;
+
+}
+.hr_connections_text_2 {
+    display: inline-block;
+    color: #0275B1;
+    margin-bottom: 0;
+}
+.hr_1,
+.hr_2 {
+    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    
+}
+.hr_1 {
+    margin-left: 15px;
+}
+.hr_2 {
+    margin-right: 0;
+}
+.hr_connections:last-of-type {
+    margin-top: -10px;
+    margin-bottom: 40px;
+
+}
+
+
+
+
 
 .invite {
     height: 95px;
