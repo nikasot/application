@@ -134,6 +134,10 @@ color: #181818;
     text-transform: uppercase;
     color: #181818 ;
 }
+
+
+
+
 .network-nav_link:focus {
     border-bottom: 2px solid #0275B1;
 }
@@ -156,6 +160,9 @@ color: #181818;
     border-radius: 4px;
     overflow: hidden;
 }
+.network-menu_li {
+   
+}
 .network-menu_link {
     padding: 13px 30px;
     border-bottom: 1px solid #f4f4f4;
@@ -163,17 +170,36 @@ color: #181818;
     font-weight: 600;
     font-size: 12px;
     text-transform: uppercase;
+    position: relative;
     
 }
 .network-menu_link:hover,
 .network-menu_link:focus {
-    padding: 13px 20px;
+    /* padding: 13px 20px; */
     border-left: 10px solid #0275B1;
+    opacity: 0.6;
+}
+
+.network-menu_link_icon {
+    margin: 0;
 }
 
 .network-menu:nth-child(6) a {
     border-bottom: 0;
     border-radius: 4px;
+}
+.orange_circle {
+    height: 9px;
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+    top: 25%;
+}
+.network-menu_link:focus:nth-child(2n) {
+    background-color: red;
+    color: red;
+    box-shadow: 0.2rem red;
+    border-color: red;
 }
 .btn_group_request {
     height: 50px;
