@@ -12,7 +12,7 @@ h1, h2, p {
     background-image: url(/img/Background.jpg);
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 666px;
 
 }
@@ -156,49 +156,6 @@ input:focus {
 
 }
 
-.checkmark {
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    top: 5px;
-    height: 18px;
-    width: 18px;
-    background-color: #eee;
-    border-radius: 4px;
-    border: 1px solid#8692A6;
-}
-.container-2_conditions:hover .checkmark,
-.checkmark:hover {
-    border-color: #1565D8;
-    transition: .3s;
-}
-
-.container-2_conditions input:checked {
-    background-color: #1565D8;
-
-}
-
-.container-2_conditions .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-.container-2_conditions input:checked ~ .checkmark:after {
-    display: block;
-}
-
-.container-2_conditions .checkmark:after {
-    left: 9px;
-    top: 2px;
-    width: 4px;
-    height: 9px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-}
 
 input[type="checkbox"] {
     display: inline-block;
@@ -207,16 +164,42 @@ input[type="checkbox"] {
     margin: 0;
     vertical-align: middle;
     position: absolute;
-    opacity: 0;
+    background: #1565D8;
+    
     cursor: pointer;
-    z-index: 1;
+   
     left: 0;
+}
+.agree_check {
+    background-color: #1565D8;
+    fill: #1565D8;
+
+    background: #1565D8;
+
+    color: #1565D8;
+
 }
 .container-2_btn_submit {
     height: 64px;
     background: #1565D8;
     border-radius: 6px;
+    margin-bottom: 0;
 }
+.hr_1, .hr_2 {
+    /* position: block; */
+    padding: 0;
+}
+.hr_text_p {
+    font-size: 12px;
+    color: #BABABA;
+}
+.hr_register {
+    height: 65px;
+    width: 426px;
+    margin-left: 0;
+    
+}
+
 .container-2_btn_google {
     height: 64px;
     background: #FFFFFF;
@@ -226,6 +209,3 @@ input[type="checkbox"] {
     border-radius: 6px;
 }
 
-.google_img {
-    position: absolute;
-}
