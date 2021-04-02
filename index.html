@@ -14,7 +14,7 @@
 <body>
 
     <section class="network">
-      <div class="row justify-content-between no gutters">
+      <div class="row justify-content-between no-gutters">
         <div class="col-5">
           <div class="container-1">
             <img class="container-1_img" src="img/Oasis.svg" alt="Oasis">
@@ -29,9 +29,9 @@
         </div>
 
         <div class="col-6">
-            <div class="container-2">
-                <div class="container-2_register">
-                    <div class="row justify-content-between">
+            <div class="col-12 container-2">
+                <div class="col-12 container-2_register">
+                    <div class="col-12 row justify-content-between">
                         <div class="col-4">
                             <div class="container-2_register_back">
                                 <img src="img/arrow.svg" alt="">                        <span>Back</span>
@@ -45,7 +45,7 @@
                             
                         </div>
                     </div>
-                    <div class="row justify-content-end">
+                    <div class="col-12 row justify-content-end">
                         <div class="col-3">
                             <div class="container-2_info">
                                 <span>Personal Info.</span>
@@ -64,12 +64,11 @@
                                 <input type="email"  id="email" placeholder="Enter email address">
                                 <label for="password">Create password*</label>
                                 <input type="password"  id="password" placeholder="Enter password">
-                                <div class="form-check container-2_conditions">
-                                    <input class="form-check-input agree_check" type="checkbox" value="" id="Check1">
-                                    <label class="form-check-label" for="Check1">
-                                        I agree to terms & conditions
-                                    </label>
-                                </div>
+                                <label class="container-checkbox">I agree to terms & conditions
+                                    <input type="checkbox" checked="checked">
+                                    <span class="checkmark"></span>
+                                </label>
+                                
                                 <input class="btn btn-primary container-2_btn_submit" type="submit" value="Register Account">
                                 <div class="row align-items-center hr_register">
                                     <hr class="col-5 hr_1">

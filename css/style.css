@@ -11,8 +11,9 @@ h1, h2, p {
 .container-1 {
     background-image: url(/img/Background.jpg);
     background-repeat: no-repeat;
+    background-size: 110%;
     position: relative;
-    height: 100%;
+    height: 100vh;
     width: 666px;
 
 }
@@ -48,7 +49,7 @@ h1, h2, p {
 
 .container-2 {
     background-color: #ffffff;
-    padding: 75px 70px 0px 10px;
+    padding: 75px 0px 0px 10px;
 }
 .container-2_register_back {
     margin-left: -4px;
@@ -70,6 +71,9 @@ h1, h2, p {
 }
 
 .container-2_right {
+    position: relative;
+    right: 20%;
+    text-align: right;
     font-weight: 500;
     font-size: 14px;
     color: #bdbdbd;
@@ -99,8 +103,8 @@ h1, h2, p {
     border-bottom: 1px solid #f5f5f5;
 }
 .register-text {
-    padding-top: 99px;
-    width: 774px;
+    padding-top: 95px;
+    
 }
 
 label {
@@ -136,49 +140,101 @@ input:focus {
     border-color: #1565D8;
     transition: .3s;
 }
-.container-2_conditions{
-    margin-bottom: 30px;
-    position: relative;
+
+form label {
+    font-weight: 500;
+    font-size: 16px;
+    color: #696F79;
 }
-.container-2_conditions label{
-    display: inline-block;
-    margin: 0;
-    vertical-align: middle;
+
+
+
+
+
+
+.container-checkbox {
     display: block;
-    
-    padding-left: 35px;
+    position: relative;
+    padding-left: 34px;
+    margin-bottom: 39px;
     cursor: pointer;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #696F79;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
 
-
-input[type="checkbox"] {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin: 0;
-    vertical-align: middle;
+/* Hide the browser's default checkbox */
+.container-checkbox input {
     position: absolute;
-    background: #1565D8;
-    
+    opacity: 0;
     cursor: pointer;
-   
-    left: 0;
 }
-.agree_check {
+
+/* Create a custom checkbox */
+.container-checkbox .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    height: 17px;
+    width: 17px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #1565D8;
+}
+
+/* On mouse-over, add a grey background color */
+.container-checkbox:hover input ~ .checkmark {
+    background-color: rgb(235, 231, 231);
+    border: solid 1px #1565D8;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-checkbox input:checked ~ .checkmark {
     background-color: #1565D8;
-    fill: #1565D8;
-
-    background: #1565D8;
-
-    color: #1565D8;
-
 }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.container-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(40deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container-2_btn_submit {
     height: 64px;
     background: #1565D8;
