@@ -11,11 +11,10 @@ h1, h2, p {
 .container-1 {
     background-image: url(/img/Background.jpg);
     background-repeat: no-repeat;
-    background-size: 110%;
+    background-size: 120%;
     position: relative;
     height: 100vh;
-    width: 666px;
-
+    width: 100%;
 }
 .container-1_img {
     position: absolute;
@@ -23,33 +22,34 @@ h1, h2, p {
     left: 82px;
 }
 
-
 .container-1_wraper {
     position: absolute;
     top: 50%;
     margin-top: -137px;
     left: 50%;
     margin-left: -236px;
-    
-      
 }
 .quote {
     width: 473px;
     font-weight: 400;
     font-size: 20px;
     color: #ffffff;
-    /* padding-top: 276px;
-    padding right: 111px; */
-    
+        
+}
+.container-1_wraper p {
+    margin-bottom: 2%;
 }
 .container-1_img2 {
     position: absolute;
-    right: 0;
+    right: 1%;
+    bottom: -15%;
 }
 
 .container-2 {
-    background-color: #ffffff;
-    padding: 75px 0px 0px 10px;
+    background-color: transparent;
+    padding-top: 7%;
+    padding-left: 1%;
+    
 }
 .container-2_register_back {
     margin-left: -4px;
@@ -67,12 +67,12 @@ h1, h2, p {
 }
 
 .container-2_register_back span {
-    padding-left: 14px;
+    padding-left: 5%;
 }
 
 .container-2_right {
     position: relative;
-    right: 20%;
+    
     text-align: right;
     font-weight: 500;
     font-size: 14px;
@@ -81,6 +81,7 @@ h1, h2, p {
 }
 
 .container-2_info {
+    text-align: right;
     font-weight: 600;
     font-size: 16px;
     color: #8692A6;
@@ -104,7 +105,7 @@ h1, h2, p {
 }
 .register-text {
     padding-top: 95px;
-    
+    padding-top: 8%;
 }
 
 label {
@@ -147,11 +148,6 @@ form label {
     color: #696F79;
 }
 
-
-
-
-
-
 .container-checkbox {
     display: block;
     position: relative;
@@ -166,15 +162,12 @@ form label {
     -ms-user-select: none;
     user-select: none;
 }
-
-/* Hide the browser's default checkbox */
 .container-checkbox input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-/* Create a custom checkbox */
 .container-checkbox .checkmark {
     position: absolute;
     top: 4px;
@@ -186,30 +179,25 @@ form label {
     border: solid 1px #1565D8;
 }
 
-/* On mouse-over, add a grey background color */
 .container-checkbox:hover input ~ .checkmark {
     background-color: rgb(235, 231, 231);
     border: solid 1px #1565D8;
 }
 
-/* When the checkbox is checked, add a blue background */
 .container-checkbox input:checked ~ .checkmark {
     background-color: #1565D8;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .container-checkbox .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
-/* Show the checkmark when checked */
 .container-checkbox input:checked ~ .checkmark:after {
     display: block;
 }
 
-/* Style the checkmark/indicator */
 .container-checkbox .checkmark:after {
     left: 5px;
     top: 2px;
@@ -222,19 +210,6 @@ form label {
     transform: rotate(40deg);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container-2_btn_submit {
     height: 64px;
     background: #1565D8;
@@ -242,7 +217,6 @@ form label {
     margin-bottom: 0;
 }
 .hr_1, .hr_2 {
-    /* position: block; */
     padding: 0;
 }
 .hr_text_p {
@@ -253,15 +227,189 @@ form label {
     height: 65px;
     width: 426px;
     margin-left: 0;
-    
 }
 
 .container-2_btn_google {
     height: 64px;
     background: #FFFFFF;
     background: url(../img/Google.svg) no-repeat 10% 50%;
-    
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
     border-radius: 6px;
 }
 
+@media screen and (max-device-width:1439px) {
+    .container-1_img {
+        top: 5%;
+        left: 10%;
+    }
+    .container-1_wraper {
+        top: 55%;
+        margin-top: -137px;
+        left: 50%;
+        margin-left: -40%;
+    }
+    .quote {
+        width: 85%;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    .container-1_img2 {
+        right: 20%;
+        bottom: -25%;
+        max-width: 15%;
+        max-height: 15%;
+    }
+    .container-2_register_back img {
+        max-width: 7%;
+        max-height: 7%;
+    }
+    .container-2_register_back span{
+        font-size: 14px;
+    }
+    .container-2_info span{
+        font-size: 14px;
+    }
+    .container-2 h2 {
+        width: 100%;
+        font-size: 20px;
+    }
+    .container-2 p {
+        width: 100%;
+        font-size: 12px;
+        margin-bottom: 5%;
+        padding-bottom: 5%;
+    }
+    label {
+        margin-bottom: 10px;
+    }
+    form label {
+        font-size: 12px;
+    }
+    input {
+        width: 100%;
+        margin-bottom: 16px;
+        padding: 18px 20px 18px 24px;
+    }
+    input::placeholder {
+        font-size: 12px;
+    }
+    .container-checkbox {
+        padding-left: 34px;
+        margin-bottom: 25px;
+        font-size: 14px;
+    }
+    .container-2_btn_submit {
+        height: 55px;
+    }
+    .hr_1, .hr_2 {
+        padding: 0;
+    }
+    .hr_text_p {
+        font-size: 10px;
+        padding: 0;
+    }
+    .hr_register {
+        height: 50px;
+        width: 100%;
+        margin-left: 0;
+    }
+    .container-2_btn_google {
+        height: 55px;
+    }
+}
+@media screen and (max-device-width:1023px) {
+    .container-2_register_back {
+        margin-left: -10px;
+    }
+    .container-2 h2 {
+        font-size: 18px;
+    }
+}
+@media screen and (max-device-width:991px) {
+    .container-1_wraper img:nth-of-type(1){
+        max-height: 18px;
+    }
+    .container-1_wraper img:nth-of-type(2){
+        max-height: 14px;
+    }
+    .container-1_img {
+        max-height: 4%;
+    }
+    .quote {  
+        font-size: 10px;
+    }
+    .container-2_register_back span{
+        font-size: 10px;
+    }
+    .container-2_right span{
+        font-size: 10px;
+    }
+    .container-2_info span{
+        font-size: 10px;
+    }
+    .container-2 h2 {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+    .container-2 p {
+        font-size: 10px;
+        margin-bottom: 4%;
+        padding-bottom: 4%;
+    }
+    label {
+        margin-bottom: 7px;
+    }
+    form label {
+        font-size: 10px;
+    }
+    input {
+        margin-bottom: 12px;
+        padding: 11px 16px 11px 22px;
+    }
+    input::placeholder {
+        font-size: 10px;
+    }
+    
+    .container-checkbox {
+        padding-left: 25px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .container-checkbox .checkmark {
+        top: 2px;
+        left: 1px;
+        height: 16px;
+        width: 16px;
+    }
+    
+    .container-checkbox .checkmark:after {
+        left: 4px;
+        top: 2px;
+        width: 5px;
+        height: 9px;
+    }
+    .container-2_btn_submit {
+        height: 43px;
+        font-size: 12px;
+    }
+    .hr_1, .hr_2 {
+        padding: 0;
+    }
+    .hr_text {
+        padding-left: 12px;
+    }
+    .hr_text_p {
+        font-size: 10px;
+        padding: 0;
+    }
+    .hr_register {
+        height: 43px;
+        margin-left: 0;
+    }
+    .container-2_btn_google {
+        height: 43px;
+        font-size: 12px;
+        background-size: 10%;
+        background-position: 8%;
+    }
+}
