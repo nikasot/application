@@ -6,50 +6,8 @@ body {
 h1, h2, h3, h4, p {
     margin: 0;
 }
-.head {
-    background-color: rgb(223, 168, 195);
-    height: 650px;
-}
-.head-block {
-    display: flex; 
-    flex-direction: column-reverse;
-    justify-content: center;
-    /**/
-}
-.green {
-    width: 100px;
-    height: 100px;
-    background-color: rgb(50, 172, 50);
-    font-size: 20px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 4px;
-    margin-right: 4px;
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .experience {
+.experience {
     padding: 64px 0;
 }
 .container {
@@ -58,7 +16,9 @@ h1, h2, h3, h4, p {
     
 }
 .experience-block {
+    display: flex;
     background-color: aqua;
+    justify-content: space-between;
 }
 .experience-title {
     font-weight: 800;
@@ -78,4 +38,4 @@ h1, h2, h3, h4, p {
 }
 img {
     border-radius: 4px;
-} */
+}
