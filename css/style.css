@@ -27,6 +27,7 @@ h1, h2, h3, h4, p {
     color: #ffffff;
     text-align: center;
     margin-bottom: 48px;
+    
 }
 .services-flex {
     display: flex;
@@ -36,13 +37,92 @@ h1, h2, h3, h4, p {
 .services-item {
     display: flex;
     flex-direction: column;
-    align-items: ;
-    background: cadetblue;
+    justify-content: space-between;
+    background: #ffffff;
     width: 350px;
     height: 346px;
     margin-bottom: 30px;
+    padding: 40px 32px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+.services-item h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #18191F;
+    line-height: 32px; /*корректировать при адаптиве*/
+    margin-bottom: 12px;
+
+}
+.services-item p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #18191F;
+    line-height: 24px; /*корректировать при адаптиве*/
 }
 .services-item_img {
     width: 30px;
     height: 30px;
+}
+.services-item a {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #8c30f5;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.services-item a img {
+    margin-left: 8px;
+}
+
+.services-button {
+    display: flex;
+    justify-content: center;
+    height: 62px;
+}
+.services-button button {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    padding: 16px 18px;
+    background: transparent;
+    border-radius: 8px;
+}
+.services-button button img {
+    margin-left: 16px;
+}
+
+/* адаптив контейнера */
+
+@media screen and (max-width: 1120px) {
+    .container {width: 960px;}
+    .services-item {
+        width: 300px;
+        height: 320px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {width: 730px;}
+    .services-flex {justify-content: space-evenly;}
+}
+@media screen and (max-width: 425px) {
+    .container {width: 395px;}
+    .services-item a {
+        font-size: 14px;
+    }
+    .services-item {
+        width: 100%;
+        margin-bottom: 17px;
+    }
+    .services-title {
+        font-size: 34px;
+        line-height: 1;
+        margin-bottom: 28px;
+    }
+    
 }
