@@ -1,22 +1,15 @@
 
 @font-face {
-    font-family: "GothamPro-Light";
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
-    font-weight: 300;
-    src: local("GothamPro"),
-    url("../fonts/GothamPro-Light.woff")
+    font-weight: 400;
+    src: local("Mulish"),
+    url("../fonts/Mulish-Regular.ttf")
 }
 @font-face {
     font-family: "GothamPro-Medium";
     font-style: normal;
-    font-weight: 400;
-    src: local("GothamPro"),
-    url("../fonts/GothamPro-Medium.woff")
-}
-@font-face {
-    font-family: "GothamPro-Bold";
-    font-style: normal;
-    font-weight: 600;
-    src: local("GothamPro"),
-    url("../fonts/GothamPro-Bold.woff")
+    font-weight: 700;
+    src: local("Mulish"),
+    url("../fonts/Mulish-Bold.ttf")
 }
