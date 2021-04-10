@@ -8,104 +8,69 @@
   <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;800&display=swap" rel="stylesheet"> 
-  
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="slick-slider/slick.css">
+    <link rel="stylesheet" href="slick-slider/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
   <title>LinkedIN</title>
 </head>
 <body>
-
-  <section class="container">
-   
-      <div class="container">
-        <h2 class="services-title">Services that connect you to your users</h2>
-        <div class="services-flex">
-          <div class="services-item">
-            <img class="services-item_img" src="img/01.svg" alt="">
-            <div>
-              <h3>Mobile Application</h3>
-              <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
-            </div>
-            <a href="">
-              <img src="img/button_arrow.svg" alt="">
-              Explore
-            </a>
-          </div>
-          <div class="services-item">
-            <img class="services-item_img" src="img/Group.svg" alt="">
-            <div>
-              <h3>Mobile Application</h3>
-              <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
-            </div>
-            <a href="">
-              <img src="img/button_arrow.svg" alt="">
-              Explore
-            </a>
-          </div>
-          <div class="services-item">
-            <img class="services-item_img" src="img/04.svg" alt="">
-            <div>
-              <h3>Mobile Application</h3>
-              <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
-            </div>
-            <a href="">
-              <img src="img/button_arrow.svg" alt="">
-              Explore
-            </a>
-          </div>
-          <div class="services-item">
-            <img class="services-item_img" src="img/05.svg" alt="">
-            <div>
-              <h3>Mobile Application</h3>
-              <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
-            </div>
-            <a href="">
-              <img src="img/button_arrow.svg" alt="">
-              Explore
-            </a>
-          </div>
-          <div class="services-item">
-            <img class="services-item_img" src="img/06.svg" alt="">
-            <div>
-              <h3>Mobile Application</h3>
-              <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
-            </div>
-            <a href="">
-              <img src="img/button_arrow.svg" alt="">
-              Explore
-            </a>
-          </div>
-          <div class="services-item">
-            <img class="services-item_img" src="img/07.svg" alt="">
-            <div>
-              <h3>Mobile Application</h3>
-              <p>Lorem ipsum dolor amet, consectetur adipiscing elit. Mattis et sed nam sem tellus erat.</p>
-            </div>
-            <a href="">
-              <img src="img/button_arrow.svg" alt="">
-              Explore
-            </a>
-          </div>
-          
-        </div>
-        <div class="services-button">
-          <button>
-            Explore all
-            <img src="img/button_arrow_lite.svg" alt="">
-          </button>
-          
-        </div>
-      
-    </div>
-      
-      
-      
+    <div class="container">
+        <div class="block block1 clearfix-visible">.block1</div>
+            <p>Как и позиционирование, флоат используется для того, чтобы двигать боксы</p>
+        <div class="block block2">.block2</div>
+            <p>Но в отличие от позиционирования, которым можно двигать боксы практически произвольно, все что может float - это двигать элемент в одной из сторон потока, влево или вправо</p>
         
-  </section> 
+        
+        <p>
+            <img src="img/float-behavior.png" alt="">
+        </p>
+        
+    </div>
 
-  <!-- /.section -->
+    <section class="customer">
+        <div class="container2">
+            <div class="customer-slider">
+                
+                <div class="customer-slider_wrapper">
+                    <h1>What our customer are saying</h1>
+                    <div class="customer-slider_flex">
+                        <img src="/img/Edward.png" alt="">
+                        <div>
+                            <h3>Edward Newgate</h3>
+                            <h4>Founder Circle</h4>
+                        </div>
+                        <p>“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+                    </div>
+                </div>
+                
+                <div class="customer-slider_wrapper">
+                    <h1>What our customer are saying</h1>
+                    <div class="customer-slider_flex">
+                        <img src="/img/Edward.png" alt="">
+                        <div>
+                            <h3>Edward Newgate</h3>
+                            <h4>Founder Circle</h4>
+                        </div>
+                        <p>“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls, or administrative hassle) and securely”</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
     
     
+                
+    <script src="slick-slider/jquery.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="slick-slider/slick.min.js"></script>
 
-
+    <script >
+            $('.customer-slider').slick({
+                
+                infinite: false, 
+                dots: true
+            });
+      </script>
 </body>
 </html>
