@@ -1,187 +1,52 @@
+:root {
+    /* базовые величины (отступы) */
+    --base-size-xs:8px;
+    --base-size-s:12px;
+    --base-size-m:16px;
+    --base-size-l:24px;
+    /* переменные цвета фона */
+    --main-bgcolor: #0b0d17;
+    --item-bgcolor: #ffffff;
+    /* цвета текста */
+    --header-text-color: #ffffff;
+    --iten-text-color: #18191F;
+    --item-button-text-color: #8C30F5;
+    /* border radius property */
+    --border-radius-xs: 8px;
+    --border-radius-s: 12px;
+    /* размеры текста */
+    --main-title: 500 48px "Manrope", sans-serif;
+    --item-title: 400 24px "Tahoma", sans-serif;
+
+}
+
+
 body {
     font-family: 'Mulish', sans-serif;
     margin: 0;
-    color: #ffffff;
+    
     box-sizing: border-box;
-    background-color: grey;
+    background-color: var(--main-bgcolor);
 }
 h1, h2, h3, h4, p {
     margin: 0;
 }
-
-.experience {
-    padding: 64px 0;
-}
 .container {
-    width: 1220px;
-    
-    margin: 0 auto; 
-}
-.container_block{
-    position: relative;
+    width: 1120px;
+    margin: 0 auto;
     
 }
-.dots-left {
-    position: absolute;
-    top: 55%;
-    z-index: -1;
+.box    {
+    background-color: rgb(207, 224, 171);
+    height: 300px;
+    width: 350px;
+    display: inline-block;
+    margin-right: -4px;
+    margin-left: calc(var(--base-size-l));
+    font: var(--main-title);
 }
-.dots-right {
-    position: absolute;
-    right: 0;
-    top: -3%;
-}
-.customer-block {
-    margin: 15px 48px 47px 52px;
-    border-radius: 24px;
-    background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
-    display: flex !important;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 64px;
-    
-}
-.customer-block h2 {
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 48px;
-    
-}
-hr {
-    margin-top: 25px;
-    width: 56px;
-    height: 2px;
-    background: #FFFFFF;
-    border-radius: 6px;
-    border: transparent;
-}
-.customer-block_person {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 66px;
-    padding-bottom: 89px;
-    width: 90%;
-    /* margin-left: 118px;
-    margin-right: 118px; */
-}
-.customer-person img {
-    display: flex;
-    border-radius: 50%;
-    border: 4px solid #ffffff;
-}
-.customer-person_text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-.customer-person {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-grow: 1;
-
-}
-.customer-person_text h3{
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 32px;
-}
-.customer-person_text p{
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 32px;
-    
-}
-.customer-citate {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-grow: 1;
-}
-.customer-citate p {
-    display: flex;
-    align-self: center;
-    font-weight: normal;
-    font-size: 19px;
-    line-height: 30px;  
-    width: 420px;
-    color: rgba(255, 255, 255, 0.9);
-    max-width: 0cm;
-    
-}
-
-/* slick-slider */
-.slider-arrow {
-    position: absolute;
-    bottom: -22px;
-    z-index: 99;
-    width: 29px;
-    height: 20px;
-    cursor: pointer;
-    
-}
-.slider-arrow_left {
-    background: url(..//img/arrow-left.svg) center no-repeat;
-    right: 50%;
-    margin-right: 100px;
-    
-}
-.slider-arrow_right {
-    background: url(..//img/arrow-right.svg) center no-repeat;
-    right: 40%;
-    margin-left: 100px;
-}
-/* перебивка точек слайдера */
-.slick-dots {
-    bottom: -22px;
-    
-}
-.slick-dots li button::before {
-    /* обнуляем контент */
-    content: ''; 
-    background: url(..//img/inactive-dot.svg)center no-repeat;
-}
-.slick-dots li.slick-active button::before {
-    content: '';
-    background: url(../img/active-dot.svg) center no-repeat;
-}
-
-
-
-
-
-
-
-/* адаптив контейнера */
-
-@media screen and (max-width: 1120px) {
-    .container {width: 960px;}
-    .services-item {
-        width: 300px;
-        height: 320px;
-    }
-}
-@media screen and (max-width: 768px) {
-    .container {width: 730px;}
-    .services-flex {justify-content: space-evenly;}
-}
-@media screen and (max-width: 425px) {
-    .container {width: 395px;}
-    .services-item a {
-        font-size: 14px;
-    }
-    .services-item {
-        width: 100%;
-        margin-bottom: 17px;
-    }
-    .services-title {
-        font-size: 34px;
-        line-height: 1;
-        margin-bottom: 28px;
-    }
-    
+.box h3 {
+    --title-color: green;
+    font: var(--item-title);
+    color: green;
 }
