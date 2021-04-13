@@ -1,6 +1,70 @@
 /*переменные*/
+.color-primary {
+  background-color: purple;
+}
+.color-complimentary {
+  background-color: #00802b;
+}
 body {
-  background-color: aqua;
-  background-color: #1d365d;
-  background-color: blue;
+  background-color: #7c9b9b;
+}
+.rule-1 {
+  text-align: right;
+}
+/*вложенные правила*/
+.super-class-name {
+  color: #ffffff;
+}
+.super-class-name a {
+  text-decoration: none;
+}
+.super-class-name a span {
+  font-size: 14px;
+}
+/*можно правила записать более кратко*/
+.super-class-name {
+  color: #ffffff;
+}
+.super-class-name a {
+  text-decoration: none;
+}
+.super-class-name a span {
+  font-size: 14px;
+}
+.super-button-red {
+  color: red;
+}
+.super-button-blue {
+  color: blue;
+}
+.super-button-red {
+  color: red;
+}
+.super-button-blue {
+  color: blue;
+}
+.block-1 {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 4em;
+  left: 50% / 2;
+  background-color: #141414;
+}
+button {
+  padding: 10px 24px;
+  background-color: #e1cef5;
+  border: 0;
+  color: #ffffff;
+}
+button:hover {
+  background-color: #ad79e4;
+}
+button:focus {
+  background-color: #792acd;
+}
+button:hover {
+  background-color: #ad69f4;
+}
+button:focus {
+  background-color: #e1dae9;
 }
