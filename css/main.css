@@ -1,70 +1,47 @@
-/*переменные*/
-.color-primary {
-  background-color: purple;
-}
-.color-complimentary {
-  background-color: #00802b;
-}
 body {
-  background-color: #7c9b9b;
+  font: 100% Helvetica, sans-serif;
 }
-.rule-1 {
-  text-align: right;
+
+#main p {
+  color: #00ff00;
+  width: 300px;
 }
-/*вложенные правила*/
-.super-class-name {
-  color: #ffffff;
+
+#main p .redbox {
+  background-color: blue;
+  color: #000;
 }
-.super-class-name a {
-  text-decoration: none;
+
+#main {
+  width: 1110px;
+  margin: 0 auto;
 }
-.super-class-name a span {
+
+#main p, #main div {
   font-size: 14px;
 }
-/*можно правила записать более кратко*/
-.super-class-name {
-  color: #ffffff;
+
+#main p a, #main div a {
+  font-weight: bold;
 }
-.super-class-name a {
-  text-decoration: none;
+
+.feature {
+  background-color: #000;
 }
-.super-class-name a span {
+
+.feature-block {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: blue;
+}
+
+.feature-block_title {
   font-size: 14px;
+  font-weight: 500;
 }
-.super-button-red {
-  color: red;
+
+.feature-block_subtitle {
+  color: green;
+  background-color: yellow;
 }
-.super-button-blue {
-  color: blue;
-}
-.super-button-red {
-  color: red;
-}
-.super-button-blue {
-  color: blue;
-}
-.block-1 {
-  padding-top: 30px;
-  padding-bottom: 50px;
-  font-size: 4em;
-  left: 50% / 2;
-  background-color: #141414;
-}
-button {
-  padding: 10px 24px;
-  background-color: #e1cef5;
-  border: 0;
-  color: #ffffff;
-}
-button:hover {
-  background-color: #ad79e4;
-}
-button:focus {
-  background-color: #792acd;
-}
-button:hover {
-  background-color: #ad69f4;
-}
-button:focus {
-  background-color: #e1dae9;
-}
+/*# sourceMappingURL=main.css.map */

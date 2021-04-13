@@ -1,0 +1,37 @@
+// два варианта написания sass (базовый) или как его называют синтаксис отступов и scss (пишется как обычный css, но при этом имеет возможности sass)
+
+    //Правило вложения
+$font-stack: Helvetica, sans-serif
+$primary-color: #333
+
+body
+    font: 100% $font-stack
+#main p
+    color: #00ff00
+    width: 300px
+
+    .redbox
+        background-color: blue
+        color:#000
+#main
+    width: 1110px
+    margin: 0 auto
+    p, div
+        font-size: 14px
+        a
+            font-weight: bold
+.feature
+    background-color: #000
+    &-block
+        padding-top: 20px
+        padding-bottom: 20px
+        color: blue
+        &_title
+            font-size: 14px
+            font-weight: 500
+        &_subtitle
+            color: green
+            background-color: yellow
+
+        
+
