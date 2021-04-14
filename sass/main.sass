@@ -1,6 +1,6 @@
 // два варианта написания sass (базовый) или как его называют синтаксис отступов и scss (пишется как обычный css, но при этом имеет возможности sass)
 
-    //Правило вложения
+    //Правило вложен  
 $font-stack: Helvetica, sans-serif
 $primary-color: #333
 
@@ -32,6 +32,167 @@ body
         &_subtitle
             color: green
             background-color: yellow
+/* Привязка  родительскому селектору */
+a
+    font-weight: normal
+    text-decoration: none
+    &:hover
+        text-decoration: normal
+    body.firefox &
+        font-weight: normal
+#main
+    color: black
+    a
+        font-weight: normal
+        &:hover
+            color: black
+            a
+                font-weight: normal
+                &:hover
+                    color: red
+/*вложенные свойства*/ 
+.selector
+    margin:
+        top: 15px
+        left: 6px
+    padding: 
+        top: 5px
+        bottom: 8px
+/*селекторы шаблоны*/ 
+%main-button
+    font-size: 12px
+    font-weight: 500
+    padding: 11px 20px 10px 20px
+    outline: none
+    cursor: pointer
+    border: 1px solid transparent
+    border-radius: 4px
+.first-button
+    background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%)
+    color: white
+    @extend %main-button
+.second-button
+    background: transparent
+    border: 1px solid#c9c9c9
+    color: #c9c9c9
+    @extend %main-button
+    /*Sasscript*/
+$summ: 10 + 20 / 2
+$cn: content
 
+.selector
+    margin: 
+        top: $summ + px
+        bottom:  12px + 8px
+    background-color: trans + parent
+    #{$cn}: "con" + "tent"
+
+$in: интер
+
+.interpol
+    content: "#{$in}поляция"
+
+/*Переменные Sass*/ 
+$accent: #ff9910
+$text-color: #000
+
+.button
+    background-color: $accent
+    color: $text-color
+
+$primary-bg-color: #0e69b5
+$primary-text-color: #ffffff
+$secondary-bg-color: transparent
+$secondary-text-color: #c9c9c9
+
+.first-button
+    background: $primary-bg-color
+    color: $primary-text-color
+    &:hover
+        background: darken($primary-bg-color, 7%)
+    &:focus
+        background: darken($primary-bg-color, 14%)
+    &:hover
+        background: lighten($primary-bg-color, 7%)
+    &:focus
+        background: lighten($primary-bg-color, 14%)
+
+.second-color
+    background: $secondary-bg-color
+    color: $secondary-text-color
+
+/*Операции с цветами*/
+
+$color1: #440203 +#550506
+$color2: #010203 * 2
+$color3: rgba(180, 0, 0, 0.75) + rgba(20, 255, 0, 0.75)
+
+body
+    background-color: $color1
+    color: $color2
+    border-color: $color3
+
+$transulcent-red: rgba(255, 0, 0, 0.5)
+
+p
+    color: opacify($transulcent-red, 0.3)
+    background-color: transparentize($transulcent-red, 0.25)
+
+.selector
+    background-color: rgba(#333, 0.75)
+
+/* Директива @import */
+
+// @import "main.css"
+// @import "http://ikea.com"
+// @import url(foo) 
+
+// @import "features.sass"
+//@import "features" 
+//то же самое
+
+/*Директива @at-toot*/ 
+
+.selector
+    margin-top: 10px
+    @at-root
+        .item
+            background-color: #ccc
+    .item
+        background-color: red
+    
+/* Директива @if()*/
+
+$let: 5
+
+.selector
+    @if $let >= 5
+        content: " >= 5"
+    @else if $let <= 5
+        content: " <= 5"
+    @else 
+        content: ""
         
+/*Директива @for выводит блок со стилями определенное кол-во раз. $i - переменная счетчик. to (без последнего числа) through ( и последнее число тоже)*/
 
+@for $i from 1 to 11
+    .item-#{$i}
+        background-image: url(img/#{$i}.jpj)
+      
+/*Директива Each.*/ 
+/* Если требуется перебрать список значений.*/
+
+@each $name in carousel, block, certical, rewiews, footer
+    .section-#{$name}
+        background-image: url(img/#{name}.jpg)
+ 
+
+/*Директива while*/ 
+/* while циклично выводит блок стилей, пока выражение является истинным*/ 
+$i: 6
+@while $i > 0
+    .item-#{$i}
+        width: 2em * $i
+    $i: $i - 2
+
+      
