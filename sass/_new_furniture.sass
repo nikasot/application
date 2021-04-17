@@ -1,0 +1,91 @@
+.new_furniture
+    display: flex
+    padding-bottom: 120px
+    padding-top: 102px
+
+.new_furniture_wrapper
+    display: flex
+.new_left_block
+    display: flex
+    background: green
+    width: 50%
+    flex-wrap: wrap
+    background: lighten(green, 30%)
+    
+.new_img_block
+    display: flex
+    width: 50%
+    flex-direction: column
+    align-items: center
+    background:#FFFFFF
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03)
+.new_img_block:first-child
+    box-shadow: none
+.new_left_header
+    justify-content: center
+    align-items: flex-start
+.new_img2
+    height: 201px
+    overflow: hidden
+
+
+.new_img_text
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.new_right_block
+    display: flex
+    background: lighten(red, 30%)
+    width: 50%
+    flex-direction: column
+    align-items: center
+    background:#FFFFFF
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03)
+.new_right_text
+    display: flex
+    flex-direction: column
+    align-items: center
+.new_right_text p:first-child
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 27px
+    color: #303032
+    margin-bottom: 7px
+.new_right_text p:last-child
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 28px
+    line-height: 38px
+    color: #303032
+    margin-bottom: 26px
+
+@media screen and ( max-width: 1439px  )
+    .container
+        padding-left: 16px
+        padding-right: 16px
+@media screen and ( max-width: 991px  )    
+    .container
+        width: 393px
+    .new_furniture_wrapper
+        flex-direction: column
+        align-items: center
+    .new_left_block
+        width: 100%
+    .new_right_block
+        width: 100%
+
+    .new_img_block
+        overflow: hidden
+    .new_right_block
+        overflow: hidden    
+@media screen and ( max-width: 324px  )
+    .container
+        width: 288px
+    .new_img_block
+        width: 100%
+    .new-right_img img
+        width: 100%
