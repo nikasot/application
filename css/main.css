@@ -1,4 +1,8 @@
 @charset "UTF-8";
+p {
+  background: red;
+}
+
 body {
   font: 100% Helvetica, sans-serif;
 }
@@ -271,5 +275,10 @@ p {
 /*mixin это блоки sass кода (примесей шаблона), которые могут принимать аргумент(опционально) Это что-то вроде функции(коробки), которая принимает аргумент и может выполнить огромный объем работы и выдать результат в зависимости от исходного параметра*/
 p {
   border: #333 1px solid;
+}
+
+.animation-block {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,10 @@
+@import _features
+    
+    
+    
+    
+    
+
 // два варианта написания sass (базовый) или как его называют синтаксис отступов и scss (пишется как обычный css, но при этом имеет возможности sass)
 
     //Правило вложен  
@@ -200,5 +207,16 @@ $i: 6
     border: $color 1px solid
 p
     @include border(#333)
+
+
+@mixin transition($time)
+    -webkit-transition: all $time ease
+    -moz-transition:    all $time ease
+    -o-transition:      all $time ease
+    transition:         all $time ease
+
+.animation-block
+    @include transition(.25s)
+
     
     
