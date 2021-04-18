@@ -1,97 +1,24 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 50px;
 }
 
-.time {
-  color: red;
+textarea {
+  resize: none;
+  outline: none;
 }
 
-.timer {
-  color: blue;
-}
-
-.time + .timer {
-  color: purple;
-}
-
-/*А ~ В - выбор элемента В, который находится на том же уровне вложенности что и А. При этом они имеют общего родителя и элемент В находится после элемента А*/
-/*А + В - выбор элемента В, который находится непосредственно после элемента А. Такой селектор называется смежным или соседним*/
-div {
-  color: pink;
-}
-
-input[type="submit"] {
-  background-color: grey;
-}
-
-.block > .block-1 {
-  background-color: yellow;
-}
-
-#red {
-  background-color: purple;
-}
-
-div#test span {
-  color: green;
-}
-
-div span {
-  color: red;
-}
-
-span {
-  color: pink;
-}
-
-.verstal {
-  background-color: green;
-  width: 500px;
-  height: 300px;
-  font-size: 24px;
-  overflow: auto;
-}
-
-.contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 1rem;
-  background-color: #673ab7;
-  width: 420px;
-}
-
-.contact-body {
-  padding: 1.5rem;
-  overflow-x: hidden;
-}
-
-.contact-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.contact-name {
-  font-weight: 700;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
   white-space: nowrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
 }
 
-.contact-time {
-  margin-left: auto;
-}
-
-.contact-message {
-  margin: 0;
-  font-size: 20px;
-  white-space: nowrap;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
+.sr-only {
+  visibility: hidden;
+  position: absolute;
 }
