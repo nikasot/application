@@ -1,284 +1,97 @@
 @charset "UTF-8";
-p {
-  background: red;
-}
-
 body {
-  font: 100% Helvetica, sans-serif;
+  margin: 0;
+  padding: 50px;
 }
 
-#main p {
-  color: #00ff00;
-  width: 300px;
-}
-
-#main p .redbox {
-  background-color: blue;
-  color: #000;
-}
-
-#main {
-  width: 1110px;
-  margin: 0 auto;
-}
-
-#main p, #main div {
-  font-size: 14px;
-}
-
-#main p a, #main div a {
-  font-weight: bold;
-}
-
-.feature {
-  background-color: #000;
-}
-
-.feature-block {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: blue;
-}
-
-.feature-block_title {
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.feature-block_subtitle {
-  color: green;
-  background-color: yellow;
-}
-
-/* Привязка  родительскому селектору */
-a {
-  font-weight: normal;
-  text-decoration: none;
-}
-
-a:hover {
-  -webkit-text-decoration: normal;
-          text-decoration: normal;
-}
-
-body.firefox a {
-  font-weight: normal;
-}
-
-#main {
-  color: black;
-}
-
-#main a {
-  font-weight: normal;
-}
-
-#main a:hover {
-  color: black;
-}
-
-#main a:hover a {
-  font-weight: normal;
-}
-
-#main a:hover a:hover {
+.time {
   color: red;
 }
 
-/*вложенные свойства*/
-.selector {
-  margin-top: 15px;
-  margin-left: 6px;
-  padding-top: 5px;
-  padding-bottom: 8px;
+.timer {
+  color: blue;
 }
 
-/*селекторы шаблоны*/
-.first-button, .second-button {
-  font-size: 12px;
-  font-weight: 500;
-  padding: 11px 20px 10px 20px;
-  outline: none;
-  cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
+.time + .timer {
+  color: purple;
 }
 
-.first-button {
-  background: -webkit-gradient(linear, left top, left bottom, from(#0077B5), to(#0E6795));
-  background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
-  color: white;
+/*А ~ В - выбор элемента В, который находится на том же уровне вложенности что и А. При этом они имеют общего родителя и элемент В находится после элемента А*/
+/*А + В - выбор элемента В, который находится непосредственно после элемента А. Такой селектор называется смежным или соседним*/
+div {
+  color: pink;
 }
 
-.second-button {
-  background: transparent;
-  border: 1px solid #c9c9c9;
-  color: #c9c9c9;
-  /*Sasscript*/
+input[type="submit"] {
+  background-color: grey;
 }
 
-.selector {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: transparent;
-  content: "content";
+.block > .block-1 {
+  background-color: yellow;
 }
 
-.interpol {
-  content: "интерполяция";
+#red {
+  background-color: purple;
 }
 
-/*Переменные Sass*/
-.button {
-  background-color: #ff9910;
-  color: #000;
+div#test span {
+  color: green;
 }
 
-.first-button {
-  background: #0e69b5;
-  color: #ffffff;
+div span {
+  color: red;
 }
 
-.first-button:hover {
-  background: #0b5694;
+span {
+  color: pink;
 }
 
-.first-button:focus {
-  background: #094373;
+.verstal {
+  background-color: green;
+  width: 500px;
+  height: 300px;
+  font-size: 24px;
+  overflow: auto;
 }
 
-.first-button:hover {
-  background: #117cd6;
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+  background-color: #673ab7;
+  width: 420px;
 }
 
-.first-button:focus {
-  background: #1d8fee;
+.contact-body {
+  padding: 1.5rem;
+  overflow-x: hidden;
 }
 
-.second-color {
-  background: transparent;
-  color: #c9c9c9;
+.contact-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-/*Операции с цветами*/
-body {
-  background-color: #990709;
-  color: #020406;
-  border-color: rgba(200, 255, 0, 0.75);
+.contact-name {
+  font-weight: 700;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
-p {
-  color: rgba(255, 0, 0, 0.8);
-  background-color: rgba(255, 0, 0, 0.25);
+.contact-time {
+  margin-left: auto;
 }
 
-.selector {
-  background-color: rgba(51, 51, 51, 0.75);
+.contact-message {
+  margin: 0;
+  font-size: 20px;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
-
-/* Директива @import */
-/*Директива @at-toot*/
-.selector {
-  margin-top: 10px;
-}
-
-.item {
-  background-color: #ccc;
-}
-
-.selector .item {
-  background-color: red;
-}
-
-/* Директива @if()*/
-.selector {
-  content: " >= 5";
-}
-
-/*Директива @for выводит блок со стилями определенное кол-во раз. $i - переменная счетчик. to (без последнего числа) through ( и последнее число тоже)*/
-.item-1 {
-  background-image: url(img/1.jpj);
-}
-
-.item-2 {
-  background-image: url(img/2.jpj);
-}
-
-.item-3 {
-  background-image: url(img/3.jpj);
-}
-
-.item-4 {
-  background-image: url(img/4.jpj);
-}
-
-.item-5 {
-  background-image: url(img/5.jpj);
-}
-
-.item-6 {
-  background-image: url(img/6.jpj);
-}
-
-.item-7 {
-  background-image: url(img/7.jpj);
-}
-
-.item-8 {
-  background-image: url(img/8.jpj);
-}
-
-.item-9 {
-  background-image: url(img/9.jpj);
-}
-
-.item-10 {
-  background-image: url(img/10.jpj);
-}
-
-/*Директива Each.*/
-/* Если требуется перебрать список значений.*/
-.section-carousel {
-  background-image: url(img/name.jpg);
-}
-
-.section-block {
-  background-image: url(img/name.jpg);
-}
-
-.section-certical {
-  background-image: url(img/name.jpg);
-}
-
-.section-rewiews {
-  background-image: url(img/name.jpg);
-}
-
-.section-footer {
-  background-image: url(img/name.jpg);
-}
-
-/*Директива while*/
-/* while циклично выводит блок стилей, пока выражение является истинным*/
-.item-6 {
-  width: 12em;
-}
-
-.item-4 {
-  width: 8em;
-}
-
-.item-2 {
-  width: 4em;
-}
-
-/*mixin это блоки sass кода (примесей шаблона), которые могут принимать аргумент(опционально) Это что-то вроде функции(коробки), которая принимает аргумент и может выполнить огромный объем работы и выдать результат в зависимости от исходного параметра*/
-p {
-  border: #333 1px solid;
-}
-
-.animation-block {
-  -webkit-transition: all 0.25s ease;
-  transition: all 0.25s ease;
-}
-/*# sourceMappingURL=main.css.map */
