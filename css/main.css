@@ -30,6 +30,11 @@ h1, h2, h3, h4, p {
   src: local("PlayfairDisplay-Bold"), url("../fonts/PlayfairDisplay-Bold.ttf");
 }
 
+.feature {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(65%, #F9FDFF), color-stop(35%, #FCEAE8));
+  background-image: linear-gradient(90deg, #F9FDFF 65%, #FCEAE8 35%);
+}
+
 .header-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -61,6 +66,8 @@ h1, h2, h3, h4, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .header-menu_right {
@@ -73,19 +80,34 @@ h1, h2, h3, h4, p {
           justify-content: space-between;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
+.header-menu_tabs_ul li {
   display: inline;
   text-transform: uppercase;
 }
 
-li a {
+.header-menu_tabs_ul li a {
   text-decoration: none;
+  font: 400 14px "Open Sans", sans-serif;
+  line-height: 19px;
+  letter-spacing: 0.13em;
   color: #303032;
+}
+
+.header-menu_tabs_ul li a:hover {
+  color: #7b7b80;
+}
+
+.header-menu_tabs_ul li a:active {
+  border-bottom: 1px solid;
+  color: black;
+}
+
+.header-menu_tabs_ul li a:focus {
+  border-bottom: 1px solid;
+}
+
+.search-button {
+  height: 32px;
 }
 
 .search-button form {
@@ -200,7 +222,7 @@ li a {
   line-height: 41px;
 }
 
-button {
+.design-text button {
   cursor: pointer;
   font: 400 14px "Open Sans", sans-serif;
   font-size: 16px;
@@ -217,9 +239,24 @@ button {
   margin-top: 35px;
 }
 
+.design-text button:hover {
+  background: #49494c;
+  -webkit-box-shadow: 0 10px 13px 0 #0000003d;
+          box-shadow: 0 10px 13px 0 #0000003d;
+}
+
+.design-text button:focus {
+  background: #242425;
+  -webkit-box-shadow: 0 7px 10px 0 #0000003d;
+          box-shadow: 0 7px 10px 0 #0000003d;
+}
+
+.design-chair {
+  margin-right: 5%;
+}
+
 /* перебивка точек слайдера на цифры*/
 .slick-dots {
-  background: pink;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -234,7 +271,8 @@ button {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 200px;
-  bottom: 0px;
+  width: 50px;
+  top: 45%;
   right: 0;
 }
 
@@ -251,6 +289,10 @@ button {
   margin: 0;
 }
 
+.slick-dots li button::before {
+  opacity: 1;
+}
+
 .slick-dots li #slick-slide-control00::before {
   width: inherit;
   height: inherit;
@@ -261,7 +303,6 @@ button {
   text-transform: uppercase;
   color: rgba(0, 0, 0, 0.3);
   text-align: right;
-  vertical-align: middle;
 }
 
 .slick-dots li.slick-active #slick-slide-control00::before {
@@ -273,12 +314,25 @@ button {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000;
+  opacity: 1;
   text-align: right;
-  top: -10px;
+  top: -20px;
+  right: 0;
+}
+
+.slick-dots li.slick-active #slick-slide-control00::after {
+  content: '';
+  width: 2px;
+  height: 54px;
+  position: absolute;
+  background: #000000;
+  right: -20px;
+  top: -15px;
 }
 
 .slick-dots li #slick-slide-control01::before {
-  width: 40px;
+  width: inherit;
+  height: inherit;
   content: '02';
   font: 400 20px "PlayfairDisplay-Regular", sans-serif;
   line-height: 29px;
@@ -297,12 +351,25 @@ button {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000;
+  opacity: 1;
   text-align: right;
-  top: -10px;
+  top: -20px;
+  right: 0;
+}
+
+.slick-dots li.slick-active #slick-slide-control01::after {
+  content: '';
+  width: 2px;
+  height: 54px;
+  position: absolute;
+  background: #000000;
+  right: -20px;
+  top: -15px;
 }
 
 .slick-dots li #slick-slide-control02::before {
-  width: 40px;
+  width: inherit;
+  height: inherit;
   content: '03';
   font: 400 20px "PlayfairDisplay-Regular", sans-serif;
   line-height: 29px;
@@ -321,12 +388,25 @@ button {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000;
+  opacity: 1;
   text-align: right;
-  top: -10px;
+  top: -20px;
+  right: 0;
+}
+
+.slick-dots li.slick-active #slick-slide-control02::after {
+  content: '';
+  width: 2px;
+  height: 54px;
+  position: absolute;
+  background: #000000;
+  right: -20px;
+  top: -15px;
 }
 
 .slick-dots li #slick-slide-control03::before {
-  width: 40px;
+  width: inherit;
+  height: inherit;
   content: '04';
   font: 400 20px "PlayfairDisplay-Regular", sans-serif;
   line-height: 29px;
@@ -345,8 +425,59 @@ button {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #000000;
+  opacity: 1;
   text-align: right;
-  top: -10px;
+  top: -20px;
+  right: 0;
+}
+
+.slick-dots li.slick-active #slick-slide-control03::after {
+  content: '';
+  width: 2px;
+  height: 54px;
+  position: absolute;
+  background: #000000;
+  right: -20px;
+  top: -15px;
+}
+
+@media screen and (max-width: 991px) {
+  .container {
+    width: 393px;
+  }
+  .new_furniture_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .new_left_block {
+    width: 100%;
+  }
+  .new_right_block {
+    width: 100%;
+  }
+  .new_img_block {
+    overflow: hidden;
+  }
+  .new_right_block {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 324px) {
+  .container {
+    width: 288px;
+  }
+  .new_img_block {
+    width: 100%;
+  }
+  .new-right_img img {
+    width: 100%;
+  }
 }
 
 .new_furniture {
@@ -474,10 +605,18 @@ button {
   margin-bottom: 26px;
 }
 
+@media screen and (max-width: 1800px) {
+  .feature {
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(69%, #F9FDFF), color-stop(31%, #FCEAE8));
+    background-image: linear-gradient(90deg, #F9FDFF 69%, #FCEAE8 31%);
+  }
+}
+
 @media screen and (max-width: 1439px) {
   .container {
-    padding-left: 16px;
-    padding-right: 16px;
+    max-width: 1000px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 
