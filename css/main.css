@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Open Sans', sans-serif;
   color: #303032;
@@ -13,11 +14,10 @@ h1, h2, h3, h4, p {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  background: pink;
 }
 
 @font-face {
-  font-family: 'PlayfairDisplay-Regular', sans-serif;
+  font-family: 'PlayfairDisplay-Regular';
   font-style: normal;
   font-weight: 400;
   src: local("PlayfairDisplay-Regular"), url("../fonts/PlayfairDisplay-Regular.ttf");
@@ -144,9 +144,9 @@ li a {
 }
 
 .design-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -215,6 +215,138 @@ button {
   background: #303032;
   border: none;
   margin-top: 35px;
+}
+
+/* перебивка точек слайдера на цифры*/
+.slick-dots {
+  background: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 200px;
+  bottom: 0px;
+  right: 0;
+}
+
+.slick-dots li {
+  width: 50px;
+  height: 40px;
+  margin: 0 0 20px 0;
+}
+
+.slick-dots li button {
+  width: inherit;
+  height: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-dots li #slick-slide-control00::before {
+  width: inherit;
+  height: inherit;
+  content: '01';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+  vertical-align: middle;
+}
+
+.slick-dots li.slick-active #slick-slide-control00::before {
+  width: inherit;
+  height: inherit;
+  content: '01';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: right;
+  top: -10px;
+}
+
+.slick-dots li #slick-slide-control01::before {
+  width: 40px;
+  content: '02';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+}
+
+.slick-dots li.slick-active #slick-slide-control01::before {
+  width: inherit;
+  height: inherit;
+  content: '02';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: right;
+  top: -10px;
+}
+
+.slick-dots li #slick-slide-control02::before {
+  width: 40px;
+  content: '03';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+}
+
+.slick-dots li.slick-active #slick-slide-control02::before {
+  width: inherit;
+  height: inherit;
+  content: '03';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: right;
+  top: -10px;
+}
+
+.slick-dots li #slick-slide-control03::before {
+  width: 40px;
+  content: '04';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  line-height: 29px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: right;
+}
+
+.slick-dots li.slick-active #slick-slide-control03::before {
+  width: inherit;
+  height: inherit;
+  content: '04';
+  font: 400 20px "PlayfairDisplay-Regular", sans-serif;
+  font-size: 40px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: right;
+  top: -10px;
 }
 
 .new_furniture {

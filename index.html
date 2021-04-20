@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="slick-slider/slick.css">
   <link rel="stylesheet" href="slick-slider/slick-theme.css">
   <link rel="stylesheet" href="css/main.css">
+  
   <title>Дизайнерская Мебель</title>
 </head>
 <body>
@@ -42,18 +43,36 @@
           </div>
         </div>
       </div>
+      
       <div class="disign-block_slider">
-        <div>
-          <img src="img/chair.png" alt="">
+        <div class="design-block">
+          <div class="design-text">
+            <h2 class="design-text_title">Дизайнерская мебель</h2>
+            <p class="design-text_name">Кресло “Антиква”</p>
+            <div class="design-text_prices">
+              <p class="design-text_price">$380</p>
+              <p class="design-text_price_sale">$240</p>
+            </div>
+            <button>Купить</button>
+          </div>
+          <div class="design-chair">
+            <img src="img/chair.png" alt="">
+          </div>
         </div>
-        <div>
-          <img src="img/chair.png" alt="">
+        <div class="design-block">
+          <div class="design-text">
+            <h2 class="design-text_title">Дизайнерская мебель</h2>
+            <p class="design-text_name">Кресло “Антиква”</p>
+            <div class="design-text_prices">
+              <p class="design-text_price">$380</p>
+              <p class="design-text_price_sale">$240</p>
+            </div>
+            <button>Купить</button>
+          </div>
+          <div class="design-chair">
+            <img src="img/chair.png" alt="">
+          </div>
         </div>
-        <div>
-          <img src="img/chair.png" alt="">
-        </div>
-      </div>
-      <div class="disign-block_slider2">
         <div class="design-block">
           <div class="design-text">
             <h2 class="design-text_title">Дизайнерская мебель</h2>
@@ -83,17 +102,27 @@
           </div>
         </div>
       </div>
-      <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-      <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-      <script type="text/javascript" src="slick-slider/slick.min.js"></script>
+      <script src="slick-slider/jquery.js"></script>
+      <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+      <script src="slick-slider/slick.min.js"></script>
 
-      <script type="text/javascript">
-        $(document).ready(function(){
-          $('.disign-block_slider').slick({
-            rtl: true
-          });
+      <script>
+        $('.disign-block_slider').slick({
+          dots:true,
+          autoplay:true,
+          autoplay:false,
+          autoplaySpeed: 3000, //default 3000
+          arrows: false,
+          speed: 1000, //default 300
+          vertical: true, // вертикальный слайдер
+          verticalSwiping: true,
+          waitForAnimate: true, // запрещает продвигать слайд во время анимации default: true
+
+
         });
       </script>
+
+  
       </div>
       </div>
   </section>
@@ -164,8 +193,7 @@
     
     
 
-        
-  </section> 
+      
 
     
   
