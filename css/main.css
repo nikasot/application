@@ -684,9 +684,27 @@ h1, h2, h3, h4, p {
   }
 }
 
-@media screen and (max-width: 324px) {
+@media screen and (max-width: 374px) {
   .container {
     width: 288px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .design-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .design-chair {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    margin-right: -16px;
+    max-width: 277px;
   }
   .new_img_block {
     width: 100%;
