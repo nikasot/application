@@ -1,0 +1,14 @@
+{
+  "name": "application",
+  "version": "1.0.0",
+  "description": "первый проект gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Soten",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
