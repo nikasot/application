@@ -17,6 +17,20 @@ h1, h2, h3, h4, p {
 }
 
 @font-face {
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: 400;
+  src: local("OpenSans-Regular"), url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'OpenSans-SemiBold';
+  font-style: normal;
+  font-weight: 400;
+  src: local("OpenSans-SemiBold"), url("../fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
   font-family: 'PlayfairDisplay-Regular';
   font-style: normal;
   font-weight: 400;
@@ -90,7 +104,7 @@ h1, h2, h3, h4, p {
 
 .header-menu_tabs_ul li a {
   text-decoration: none;
-  font: 400 14px "Open Sans", sans-serif;
+  font: 400 14px "OpenSans-Regular", sans-serif;
   line-height: 19px;
   letter-spacing: 0.13em;
   color: #303032;
@@ -235,7 +249,7 @@ h1, h2, h3, h4, p {
   display: block;
   padding: 38px 24px;
   color: #333;
-  font: 400 14px "Open Sans", sans-serif;
+  font: 400 14px "OpenSans-Regular", sans-serif;
   font-size: 18px;
   line-height: 25px;
   text-align: center;
@@ -310,7 +324,7 @@ h1, h2, h3, h4, p {
 }
 
 .design-text {
-  font: 400 20px "Open Sans", sans-serif;
+  font: 400 20px "OpenSans-Regular", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,7 +345,7 @@ h1, h2, h3, h4, p {
 }
 
 .design-text_name {
-  font: 400 20px "Open Sans", sans-serif;
+  font: 400 20px "OpenSans-Regular", sans-serif;
   line-height: 27px;
   margin-top: 35px;
 }
@@ -347,18 +361,18 @@ h1, h2, h3, h4, p {
 }
 
 .design-text_price {
-  font: 400 20px "Open Sans", sans-serif;
+  font: 400 20px "OpenSans-Regular", sans-serif;
   margin-right: 20%;
 }
 
 .design-text_price_sale {
-  font: 600 30px "Open Sans", sans-serif;
+  font: 600 30px "OpenSans-SemiBold", sans-serif;
   line-height: 41px;
 }
 
 .design-text button {
   cursor: pointer;
-  font: 400 14px "Open Sans", sans-serif;
+  font: 400 14px "OpenSans-Regular", sans-serif;
   font-size: 16px;
   text-transform: uppercase;
   line-height: 22px;
@@ -579,32 +593,36 @@ h1, h2, h3, h4, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 120px;
-  padding-top: 102px;
+  padding-bottom: 102px;
+  padding-top: 120px;
 }
 
 .new_furniture_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .new_left_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: green;
-  width: 50%;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  max-width: 600px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background: #1aff1a;
 }
 
 .new_img_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 270px;
+  height: 289px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -615,6 +633,7 @@ h1, h2, h3, h4, p {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+  margin-right: 30px;
 }
 
 .new_img_block:first-child {
@@ -622,18 +641,49 @@ h1, h2, h3, h4, p {
           box-shadow: none;
 }
 
+.new_img_block:nth-child(n+3) {
+  margin-top: 37px;
+}
+
 .new_left_header {
+  font: 700 57px "PlayfairDisplay-Bold", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  background: transparent;
+}
+
+.new_header {
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: #303032;
+  text-transform: uppercase;
+}
+
+.new_header_hr {
+  width: 90px;
+  height: 4px;
+  background: #303032;
+  border: 0;
+  margin: 14px 0 0 0;
+}
+
+.new_img1 {
+  max-width: 175px;
+  margin-top: 20px;
 }
 
 .new_img2 {
-  height: 201px;
+  max-width: 202px;
   overflow: hidden;
+}
+
+.new_img3 {
+  max-width: 270px;
 }
 
 .new_img_text {
@@ -649,12 +699,27 @@ h1, h2, h3, h4, p {
           align-items: center;
 }
 
+.new_img_text p:nth-child(odd) {
+  font: 400 20px "OpenSans-Regular", sans-serif;
+  line-height: 27px;
+  color: #303032;
+  margin-bottom: 7px;
+}
+
+.new_img_text p:nth-child(even) {
+  font: 600 30px "OpenSans-SemiBold", sans-serif;
+  font-size: 28px;
+  line-height: 38px;
+  color: #303032;
+  margin-bottom: 16px;
+}
+
 .new_right_block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background: #ff9999;
-  width: 50%;
+  width: 570px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -665,6 +730,10 @@ h1, h2, h3, h4, p {
   background: #FFFFFF;
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+}
+
+.new-right_img {
+  margin: 19px 37px 29px 43px;
 }
 
 .new_right_text {
@@ -681,19 +750,14 @@ h1, h2, h3, h4, p {
 }
 
 .new_right_text p:first-child {
-  font-family: Open Sans, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
+  font: 400 20px "OpenSans-Regular", sans-serif;
   line-height: 27px;
   color: #303032;
   margin-bottom: 7px;
 }
 
 .new_right_text p:last-child {
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: 600;
+  font: 600 30px "OpenSans-SemiBold", sans-serif;
   font-size: 28px;
   line-height: 38px;
   color: #303032;
@@ -872,7 +936,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '01 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;
@@ -887,7 +951,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '01 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;
@@ -911,7 +975,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '02 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;
@@ -926,7 +990,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '02 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;
@@ -950,7 +1014,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '03 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;
@@ -965,7 +1029,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '03 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;
@@ -989,7 +1053,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '04 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;
@@ -1004,7 +1068,7 @@ h1, h2, h3, h4, p {
     width: inherit;
     height: inherit;
     content: '04 / 04';
-    font: 600 30px "Open Sans", sans-serif;
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
     font-size: 15px;
     line-height: 26px;
     color: #141215;

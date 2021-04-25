@@ -1,63 +1,92 @@
 .new_furniture
     display: flex
-    padding-bottom: 120px
-    padding-top: 102px
-
+    padding-bottom: 102px
+    padding-top: 120px
+    // background: pink //
 .new_furniture_wrapper
     display: flex
+    justify-content: space-evenly
+    // background: lighten(green, 60%) //
 .new_left_block
     display: flex
-    background: green
-    width: 50%
+    align-content: space-between
+    max-width: 600px
     flex-wrap: wrap
-    background: lighten(green, 30%)
     
 .new_img_block
     display: flex
-    width: 50%
+    width: 270px
+    height: 289px
     flex-direction: column
     align-items: center
     background:#FFFFFF
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03)
+    margin-right: 30px
 .new_img_block:first-child
     box-shadow: none
+.new_img_block:nth-child(n+3)
+    margin-top: 37px
 .new_left_header
+    font: $font-play-lg
     justify-content: center
     align-items: flex-start
+    background: transparent
+.new_header
+    font-size: 28px
+    line-height: 37px
+    letter-spacing: 0.05em
+    color: #303032
+    text-transform: uppercase
+.new_header_hr
+    width: 90px
+    height: 4px
+    background: #303032
+    border: 0
+    margin: 14px 0 0 0 
+.new_img1
+    max-width: 175px
+    margin-top: 20px
 .new_img2
-    height: 201px
+    max-width: 202px
     overflow: hidden
-
-
+.new_img3
+    max-width: 270px
 .new_img_text
     display: flex
     flex-direction: column
     align-items: center
-
+.new_img_text p:nth-child(odd)
+    font: $font-sans-md
+    line-height: 27px
+    color: #303032
+    margin-bottom: 7px
+.new_img_text p:nth-child(even)
+    font: $font-sans-lg
+    font-size: 28px
+    line-height: 38px
+    color: #303032
+    margin-bottom: 16px
 .new_right_block
     display: flex
     background: lighten(red, 30%)
-    width: 50%
+    width: 570px
     flex-direction: column
     align-items: center
     background:#FFFFFF
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03)
+.new-right_img
+    margin: 19px 37px 29px 43px
 .new_right_text
     display: flex
     flex-direction: column
     align-items: center
 .new_right_text p:first-child
-    font-family: Open Sans, sans-serif
-    font-style: normal
-    font-weight: normal
-    font-size: 20px
+    font: $font-sans-md
     line-height: 27px
     color: #303032
     margin-bottom: 7px
 .new_right_text p:last-child
-    font-family: Open Sans
-    font-style: normal
-    font-weight: 600
+    font: $font-sans-lg
     font-size: 28px
     line-height: 38px
     color: #303032
