@@ -1,0 +1,52 @@
+:root {
+    /* базовые величины (отступы) */
+    --base-size-xs:8px;
+    --base-size-s:12px;
+    --base-size-m:16px;
+    --base-size-l:24px;
+    /* переменные цвета фона */
+    --main-bgcolor: #0b0d17;
+    --item-bgcolor: #ffffff;
+    /* цвета текста */
+    --header-text-color: #ffffff;
+    --iten-text-color: #18191F;
+    --item-button-text-color: #8C30F5;
+    /* border radius property */
+    --border-radius-xs: 8px;
+    --border-radius-s: 12px;
+    /* размеры текста */
+    --main-title: 500 48px "Manrope", sans-serif;
+    --item-title: 400 24px "Tahoma", sans-serif;
+
+}
+
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    
+    box-sizing: border-box;
+    background-color: var(--main-bgcolor);
+}
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    
+}
+.box    {
+    background-color: rgb(207, 224, 171);
+    height: 300px;
+    width: 350px;
+    display: inline-block;
+    margin-right: -4px;
+    margin-left: calc(var(--base-size-l));
+    font: var(--main-title);
+}
+.box h3 {
+    --title-color: green;
+    font: var(--item-title);
+    color: green;
+}
