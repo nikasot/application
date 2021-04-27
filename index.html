@@ -8,6 +8,8 @@
   <!-- <link rel="stylesheet" href="bootstrap/bootstrap.min.css"> -->
   <link rel="stylesheet" href="slick-slider/slick.css">
   <link rel="stylesheet" href="slick-slider/slick-theme.css">
+  <link rel="stylesheet" href="slick2-slider/slick2.css">
+  <link rel="stylesheet" href="slick2-slider/slick2-theme.css">
   <link rel="stylesheet" href="css/main.css">
   
   <title>Дизайнерская Мебель</title>
@@ -246,17 +248,32 @@
             <p>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
           </div>
         </div>
+        <div class="review_block">
+          <div class="review_img">
+            <img src="img/Elena.png" alt="">
+          </div>
+          <div class="review_name">
+            <h2>Елена Новикова</h2>
+            <p>студентка</p>
+          </div>
+          <div class="rewiew_comment">
+            <p>«Хочу поделиться своими впечатлениями по использованию дивана «Бродвей», заказывала в конце 2016 года. Держится великолепно. Спасибо, большое сотрудникам этого чудесного магазина.»</p>
+          </div>
+        </div>
       </div>
+      <script src="slick2-slider/jquery.js"></script>
+      <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+      <script src="slick2-slider/slick2.min.js"></script>
       <script>
-        $('.review_slider').slick({
+        $('.review_slider').slick2({
           dots:true,
           autoplay:true,
           autoplay:false,
           autoplaySpeed: 3000, //default 3000
-          arrows: false,
+          arrows: true,
           speed: 1000, //default 300
           vertical: false, // вертикальный слайдер
-          verticalSwiping: true,
+          verticalSwiping: false,
           waitForAnimate: true, // запрещает продвигать слайд во время анимации default: true
 
         });

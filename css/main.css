@@ -810,6 +810,54 @@ h1, h2, h3, h4, p {
   font: 400 16px "OpenSans-Italic", sans-serif;
   line-height: 25px;
   text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Slider */
+.slick2-prev {
+  left: 15%;
+  z-index: 2;
+  width: 36px;
+  height: 37px;
+}
+
+.slick2-next {
+  right: 15%;
+  z-index: 2;
+}
+
+.slick2-prev::before, .slick2-next::before {
+  font-size: 36px;
+}
+
+.slick2-prev::before {
+  display: inline-block;
+  z-index: 2;
+  content: url("../img/arrow-left.png");
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  font-size: 0;
+}
+
+.slick2-next::before {
+  display: inline-block;
+  z-index: 2;
+  content: url("../img/arrow-right.png");
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  font-size: 0;
+}
+
+.slick2-dots li button::before {
+  content: url("../img/dot-inactive.png");
+  opacity: 1;
+}
+
+.slick2-dots li.slick2-active button::before {
+  content: url("../img/dot-active.png");
+  opacity: 1;
 }
 
 @media screen {
@@ -868,6 +916,12 @@ h1, h2, h3, h4, p {
   }
   .new-right_img img {
     max-width: 460px;
+  }
+  .slick2-prev {
+    left: 10%;
+  }
+  .slick2-next {
+    right: 10%;
   }
 }
 
@@ -943,6 +997,9 @@ h1, h2, h3, h4, p {
   }
   .new-right_img img {
     max-width: 320px;
+  }
+  .rewiew_comment {
+    max-width: 450px;
   }
 }
 
@@ -1275,6 +1332,9 @@ h1, h2, h3, h4, p {
     font-size: 28px;
     line-height: 38px;
     margin-bottom: 16px;
+  }
+  .review {
+    display: none;
   }
 }
 
