@@ -770,6 +770,10 @@ h1, h2, h3, h4, p {
   margin-bottom: 26px;
 }
 
+.review {
+  padding-bottom: 100px;
+}
+
 .review_block {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -1406,6 +1410,15 @@ h1, h2, h3, h4, p {
   }
 }
 
+.last_chance {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, transparent), color-stop(80%, #F9FDFF)), -webkit-gradient(linear, left top, right top, color-stop(54%, #FAECE9), color-stop(54%, #F9FDFF));
+  background-image: linear-gradient(180deg, transparent 0%, transparent 80%, #F9FDFF 80% 100%), linear-gradient(90deg, #FAECE9 54%, #F9FDFF 54%);
+}
+
+.last_chance_wrapper {
+  padding-top: 73px;
+}
+
 .last_chance_header {
   margin-bottom: 22px;
 }
@@ -1460,8 +1473,47 @@ h1, h2, h3, h4, p {
   width: 100%;
 }
 
+.last_chair_hover_top p {
+  display: none;
+}
+
+.last_chair_hover_bottom {
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  display: none;
+}
+
+.last_chair_hover_bottom button {
+  cursor: pointer;
+  padding: 0;
+  width: 209px;
+  height: 58px;
+  background: #303032;
+  font: 400 20px "OpenSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 0;
+}
+
 .last_chair_block:hover .last_chair_hover_top {
   display: inline;
+}
+
+.last_chair_block:hover .last_chair_hover_bottom {
+  display: inline;
+}
+
+.last_chair_hover_bottom button:hover {
+  background: #242425;
+}
+
+.last_chair_hover_bottom button:active {
+  background: #3c3c3f;
 }
 
 .last_chair_text {
@@ -1543,7 +1595,6 @@ h1, h2, h3, h4, p {
 .tabs > section {
   display: none;
   padding: 5px 0 114px 0;
-  background: pink;
 }
 
 /* Прячем чекбоксы */
