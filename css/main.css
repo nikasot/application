@@ -1405,3 +1405,178 @@ h1, h2, h3, h4, p {
     font-size: 20px;
   }
 }
+
+.last_chance_header {
+  margin-bottom: 22px;
+}
+
+.last_chance_header h2 {
+  font: 700 57px "PlayfairDisplay-Bold", sans-serif;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: #303032;
+  text-transform: uppercase;
+}
+
+.last_chance_header_hr {
+  width: 90px;
+  height: 4px;
+  background: #303032;
+  border: 0;
+  margin: 14px 0 0 0;
+}
+
+.last_chance_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.last_chair_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 209px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.last_chair_hover_top {
+  height: 5px;
+  background: #303032;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.last_chair_block:hover .last_chair_hover_top {
+  display: inline;
+}
+
+.last_chair_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: 400 14px "OpenSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin: 31px 0 0 23px;
+}
+
+.last_chair_prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 600 30px "OpenSans-SemiBold", sans-serif;
+}
+
+.last_chair_price {
+  font-size: 28px;
+  line-height: 38px;
+  color: #303032;
+  margin-right: 11px;
+}
+
+.last_chair_price_sale {
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #979798;
+}
+
+.last_chair_img {
+  max-width: 209px;
+  max-height: 252px;
+  overflow: hidden;
+}
+
+.last_chair_img_img2 {
+  position: relative;
+  left: -92px;
+  top: -69px;
+}
+
+.last_chair_img_img3 {
+  position: relative;
+  left: -7px;
+  top: 6px;
+}
+
+.last_chair_img_img4 {
+  position: relative;
+  left: -79px;
+  top: -52px;
+}
+
+.last_chair_img_img5 {
+  position: relative;
+  left: 47px;
+}
+
+/* Базовый контейнер табов */
+.tabs {
+  padding: 0px;
+  margin: 0 auto;
+}
+
+/* Стили секций с содержанием */
+.tabs > section {
+  display: none;
+  padding: 5px 0 114px 0;
+  background: pink;
+}
+
+/* Прячем чекбоксы */
+.tabs > input {
+  display: none;
+  position: absolute;
+}
+
+/* Стили переключателей вкладок (табов) */
+.tabs > label {
+  display: inline-block;
+  padding: 15px 48px 25px 0;
+  font: 600 30px "OpenSans-SemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+.tabs > label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+/* Стили для активной вкладки */
+.tabs > input:checked + label {
+  color: #000000;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked ~ #content-tab1, #tab2:checked ~ #content-tab2, #tab3:checked ~ #content-tab3, #tab4:checked ~ #content-tab4 {
+  display: block;
+}

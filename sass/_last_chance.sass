@@ -1,0 +1,117 @@
+
+.last_chance_header
+    margin-bottom: 22px
+.last_chance_header h2
+    font: $font-play-lg
+    font-size: 28px
+    line-height: 37px
+    letter-spacing: 0.05em
+    color: #303032
+    text-transform: uppercase    
+.last_chance_header_hr
+    width: 90px
+    height: 4px
+    background: #303032
+    border: 0
+    margin: 14px 0 0 0     
+.last_chance_slider
+    display: flex
+    justify-content: space-between 
+.last_chair_block
+    display: flex
+    flex-direction: column
+    max-width: 209px
+    background: #ffffff
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05)
+    position: relative
+    // background: pink
+.last_chair_hover_top
+    height: 5px
+    background: #303032
+    display: none
+    position: absolute
+    z-index: 2
+    width: 100%
+.last_chair_block:hover .last_chair_hover_top
+    display: inline
+    
+
+
+.last_chair_text
+    display: flex
+    flex-direction: column
+    font: $font-sans-sm
+    font-size: 16px
+    line-height: 22px
+    color: #000000
+    margin: 31px 0 0 23px
+.last_chair_prices
+    display: flex
+    align-items: center
+    font: $font-sans-lg
+.last_chair_price
+    font-size: 28px
+    line-height: 38px
+    color: #303032
+    margin-right: 11px
+.last_chair_price_sale
+    font-size: 16px
+    line-height: 22px
+    text-decoration-line: line-through
+    color: #979798
+.last_chair_img
+    max-width: 209px
+    max-height: 252px
+    overflow: hidden
+.last_chair_img_img2
+    position: relative
+    left: -92px
+    top: -69px
+.last_chair_img_img3
+    position: relative
+    left: -7px
+    top: 6px
+.last_chair_img_img4
+    position: relative
+    left: -79px
+    top: -52px
+.last_chair_img_img5
+    position: relative
+    left: 47px
+    // top: 11px
+
+
+/* Базовый контейнер табов */
+.tabs 
+    padding: 0px
+    margin: 0 auto
+/* Стили секций с содержанием */
+.tabs>section 
+    display: none
+    padding: 5px 0 114px 0 
+    background: pink
+/* Прячем чекбоксы */
+.tabs>input 
+    display: none
+    position: absolute
+/* Стили переключателей вкладок (табов) */
+.tabs>label 
+    display: inline-block
+    padding: 15px 48px 25px 0
+    font: $font-sans-lg
+    font-size: 16px
+    line-height: 25px
+    text-align: center
+    color: rgba(0, 0, 0, 0.4)
+/* Изменения стиля переключателей вкладок при наведении */
+.tabs>label:hover 
+    color: #888
+    cursor: pointer
+/* Стили для активной вкладки */
+.tabs>input:checked+label 
+    color: #000000
+    text-decoration-line: underline
+    
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 
+    display: block
