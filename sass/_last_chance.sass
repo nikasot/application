@@ -1,5 +1,5 @@
 .last_chance
-    background-image: linear-gradient(180deg, transparent 0%, transparent 80%, #F9FDFF 80% 100%), linear-gradient(90deg,  #FAECE9 54%, #F9FDFF 54%),
+    background-image: linear-gradient(180deg, transparent 0%, transparent 76%, #F9FDFF 76% 100%), linear-gradient(90deg,  #FAECE9 54%, #F9FDFF 54%),
 .last_chance_wrapper
     padding-top: 73px
 .last_chance_header
@@ -18,15 +18,18 @@
     border: 0
     margin: 14px 0 0 0     
 .last_chance_slider
-    display: flex
+    display: flex !important
     justify-content: space-between 
+    
 .last_chair_block
     display: flex
     flex-direction: column
     max-width: 209px
+    margin-right: 32px
     background: #ffffff
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05)
     position: relative
+    margin-bottom: 45px
 .last_chair_hover_top
     height: 5px
     background: #303032
@@ -38,14 +41,17 @@
     display: none
 .last_chair_hover_bottom
     position: absolute
+    z-index: 
     left: 0
     bottom: -45px
+    width: 100%
+    height: 58px
     display: none
 .last_chair_hover_bottom button
     cursor: pointer
     padding: 0
-    width: 209px
-    height: 58px
+    width: inherit
+    height: inherit
     background: #303032
     font: $font-sans-md
     font-size: 16px
@@ -106,7 +112,6 @@
     left: 47px
     // top: 11px
 
-
 /* Базовый контейнер табов */
 .tabs 
     padding: 0px
@@ -114,7 +119,7 @@
 /* Стили секций с содержанием */
 .tabs>section 
     display: none
-    padding: 5px 0 114px 0 
+    padding: 5px 0 111px 0 
     // background: pink
 /* Прячем чекбоксы */
 .tabs>input 
@@ -137,7 +142,10 @@
 .tabs>input:checked+label 
     color: #000000
     text-decoration-line: underline
-    
 /* Активация секций с помощью псевдокласса :checked */
-#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3
     display: block
+
+// slick
+.last_chance_slider>.slick-list
+    // overflow: visible
