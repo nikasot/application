@@ -122,7 +122,6 @@
       <script>
         $('.disign-block_slider').slick({
           dots:true,
-          autoplay:true,
           autoplay:false,
           autoplaySpeed: 3000, //default 3000
           arrows: false,
@@ -382,7 +381,7 @@
                   <button>купить</button>
                 </div>
               </div>
-              <div class="last_chair_block">
+              <!-- <div class="last_chair_block extra_block">
                 <div class="last_chair_hover_top">
                   <p>hover_top</p>
                 </div>
@@ -399,7 +398,7 @@
                 <div class="last_chair_hover_bottom">
                   <button>купить</button>
                 </div>
-              </div>
+              </div> -->
             </div> 
             <script src="slick-slider/jquery.js"></script>
             <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
@@ -409,31 +408,42 @@
               $('.last_chance_slider').slick({
                 dots:false,
                 autoplay:true,
-                slidesToShow: 5,
+                slidesToShow: 4,
                 slidesToScroll: 1,
-                autoplaySpeed: -100, //default 3000
+                autoplaySpeed: 1000, //default 3000
                 arrows: false,
                 // easing: 'linear',
                 useCSS: false,
                 speed: 7000, //default 300
                 vertical: false, // вертикальный слайдер
                 verticalSwiping: false,
-                waitForAnimate: true, 
-                // запрещает продвигать слайд во время анимации default: true
+                waitForAnimate: true,
+                swipeToSlide: true,
                 responsive: [
                   {
                     breakpoint: 1439,
                     settings: {
-                      slidesToShow: 4
-                    },
-                    breakpoint: 991,
+                      slidesToShow: 3,
+                    }
+                  },
+                  {
+                  breakpoint: 991,
                     settings: {
-                      slidesToShow: 3
+                      slidesToShow: 3,
+                    }
+                  },
+                  {
+                    breakpoint: 767,
+                    settings: {
+                      slidesToShow: 1,
+                      dots:true,
+                      autoplay:false,
+                      autoplaySpeed: 3000, 
+                      arrows: false,
+                      speed: 1000, 
+                      waitForAnimate: false,
                     }
                   }
-                  // You can unslick at a given breakpoint now by adding:
-                  // settings: "unslick"
-                  // instead of a settings object
                 ]
 
               });

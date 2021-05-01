@@ -867,6 +867,240 @@ h1, h2, h3, h4, p {
   opacity: 1;
 }
 
+.last_chance {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(76%, transparent), color-stop(76%, #F9FDFF)), -webkit-gradient(linear, left top, right top, color-stop(54%, #FAECE9), color-stop(54%, #F9FDFF));
+  background-image: linear-gradient(180deg, transparent 0%, transparent 76%, #F9FDFF 76% 100%), linear-gradient(90deg, #FAECE9 54%, #F9FDFF 54%);
+}
+
+.last_chance_wrapper {
+  padding: 73px 0 66px 0;
+}
+
+.last_chance_header {
+  margin-bottom: 22px;
+}
+
+.last_chance_header h2 {
+  font: 700 57px "PlayfairDisplay-Bold", sans-serif;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 0.05em;
+  color: #303032;
+  text-transform: uppercase;
+}
+
+.last_chance_header_hr {
+  width: 90px;
+  height: 4px;
+  background: #303032;
+  border: 0;
+  margin: 14px 0 0 0;
+}
+
+.last_chance_slider {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.last_chair_block {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 209px !important;
+  margin-right: 32px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.last_chair_hover_top {
+  height: 5px;
+  background: #303032;
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.last_chair_hover_top p {
+  display: none;
+}
+
+.last_chair_hover_bottom {
+  position: absolute;
+  left: 0;
+  bottom: -45px;
+  width: 100%;
+  height: 58px;
+  display: none;
+}
+
+.last_chair_hover_bottom button {
+  cursor: pointer;
+  padding: 0;
+  width: inherit;
+  height: inherit;
+  background: #303032;
+  font: 400 20px "OpenSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 0;
+}
+
+.last_chair_block:hover .last_chair_hover_top {
+  display: inline;
+}
+
+.last_chair_block:hover .last_chair_hover_bottom {
+  display: inline;
+}
+
+.last_chair_hover_bottom button:hover {
+  background: #242425;
+}
+
+.last_chair_hover_bottom button:active {
+  background: #3c3c3f;
+}
+
+.last_chair_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font: 400 14px "OpenSans-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin: 31px 0 0 23px;
+}
+
+.last_chair_prices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font: 600 30px "OpenSans-SemiBold", sans-serif;
+}
+
+.last_chair_price {
+  font-size: 28px;
+  line-height: 38px;
+  color: #303032;
+  margin-right: 11px;
+}
+
+.last_chair_price_sale {
+  font-size: 16px;
+  line-height: 22px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+  color: #979798;
+}
+
+.last_chair_img {
+  max-width: 209px;
+  max-height: 252px;
+  overflow: hidden;
+}
+
+.last_chair_img_img2 {
+  position: relative;
+  left: -92px;
+  top: -69px;
+}
+
+.last_chair_img_img3 {
+  position: relative;
+  left: -7px;
+  top: 6px;
+}
+
+.last_chair_img_img4 {
+  position: relative;
+  left: -79px;
+  top: -52px;
+}
+
+.last_chair_img_img5 {
+  position: relative;
+  left: 47px;
+}
+
+/* Базовый контейнер табов */
+.tabs {
+  padding: 0px;
+  margin: 0 auto;
+}
+
+/* Стили секций с содержанием */
+.tabs > section {
+  display: none;
+  padding: 5px 0 111px 0;
+}
+
+/* Прячем чекбоксы */
+.tabs > input {
+  display: none;
+  position: absolute;
+}
+
+/* Стили переключателей вкладок (табов) */
+.tabs > label {
+  display: inline-block;
+  padding: 15px 48px 20px 0;
+  font: 600 30px "OpenSans-SemiBold", sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+.tabs > label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+/* Стили для активной вкладки */
+.tabs > input:checked + label {
+  color: #000000;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked ~ #content-tab1 {
+  display: block;
+}
+
+#tab2:checked ~ #content-tab2 {
+  display: block;
+}
+
+#tab3:checked ~ #content-tab3 {
+  display: block;
+}
+
 @media screen {
   .hamburger-menu {
     display: none;
@@ -1343,6 +1577,176 @@ h1, h2, h3, h4, p {
   .review {
     display: none;
   }
+  .last_chance {
+    background-image: none;
+  }
+  .tabs > label {
+    padding: 8px 103px 25px 0;
+  }
+  .tabs > label:last-of-type {
+    padding-right: 0;
+  }
+  .last_chance_slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .last_chance_slider .last_chair_block {
+    max-width: 100% !important;
+    margin-right: 0;
+    position: relative;
+    margin-bottom: 0;
+  }
+  .last_chance_slider .last_chair_block .last_chair_text {
+    padding-bottom: 18px;
+  }
+  .last_chance_slider .last_chair_block .last_chair_img {
+    -ms-flex-item-align: end;
+        -ms-grid-row-align: end;
+        align-self: end;
+  }
+  .last_chance_slider .last_chair_block:hover .last_chair_hover_top {
+    display: none;
+  }
+  .last_chance_slider .last_chair_block:hover .last_chair_hover_bottom {
+    display: none;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::before {
+    cursor: default;
+    width: inherit;
+    height: inherit;
+    content: '01 / 05';
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #141215;
+    opacity: 1;
+    text-align: right;
+    top: 0;
+    display: inherit;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    background: #303032;
+    right: 313px;
+    top: initial;
+    bottom: 11px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::before {
+    cursor: default;
+    width: inherit;
+    height: inherit;
+    content: '02 / 05';
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #141215;
+    opacity: 1;
+    text-align: right;
+    top: 0;
+    display: inherit;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    background: #303032;
+    right: 250px;
+    top: initial;
+    bottom: 11px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::before {
+    cursor: default;
+    width: inherit;
+    height: inherit;
+    content: '03 / 05';
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #141215;
+    opacity: 1;
+    text-align: right;
+    top: 0;
+    display: inherit;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    background: #303032;
+    right: 190px;
+    top: initial;
+    bottom: 11px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::before {
+    cursor: default;
+    width: inherit;
+    height: inherit;
+    content: '04 / 05';
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #141215;
+    opacity: 1;
+    text-align: right;
+    top: 0;
+    display: inherit;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    background: #303032;
+    right: 130px;
+    top: initial;
+    bottom: 11px;
+  }
+  .last_chance_slider .slick-dots li #slick-slide-control04::before {
+    cursor: default;
+    width: inherit;
+    height: inherit;
+    content: '05 / 05';
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #141215;
+    opacity: 0.48;
+    text-align: right;
+    cursor: default;
+    display: none;
+    z-index: -1;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::before {
+    cursor: default;
+    width: inherit;
+    height: inherit;
+    content: '05 / 05';
+    font: 600 30px "OpenSans-SemiBold", sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    color: #141215;
+    opacity: 1;
+    text-align: right;
+    top: 0;
+    display: inherit;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    position: absolute;
+    background: #303032;
+    right: 70px;
+    top: initial;
+    bottom: 11px;
+  }
 }
 
 @media screen and (max-width: 424px) {
@@ -1369,6 +1773,32 @@ h1, h2, h3, h4, p {
   }
   .slick-dots li.slick-active #slick-slide-control03::after {
     width: 60px;
+    right: 70px;
+  }
+  .tabs > label {
+    padding: 8px 78px 25px 0;
+  }
+  .last_chance_slider .slick-dots::after {
+    width: 270px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after {
+    width: 54px;
+    right: 286px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after {
+    width: 54px;
+    right: 232px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after {
+    width: 54px;
+    right: 178px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after {
+    width: 54px;
+    right: 124px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after {
+    width: 54px;
     right: 70px;
   }
 }
@@ -1411,238 +1841,48 @@ h1, h2, h3, h4, p {
   .new_header {
     font-size: 20px;
   }
-}
-
-.last_chance {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(76%, transparent), color-stop(76%, #F9FDFF)), -webkit-gradient(linear, left top, right top, color-stop(54%, #FAECE9), color-stop(54%, #F9FDFF));
-  background-image: linear-gradient(180deg, transparent 0%, transparent 76%, #F9FDFF 76% 100%), linear-gradient(90deg, #FAECE9 54%, #F9FDFF 54%);
-}
-
-.last_chance_wrapper {
-  padding: 73px 0 66px 0;
-}
-
-.last_chance_header {
-  margin-bottom: 22px;
-}
-
-.last_chance_header h2 {
-  font: 700 57px "PlayfairDisplay-Bold", sans-serif;
-  font-size: 28px;
-  line-height: 37px;
-  letter-spacing: 0.05em;
-  color: #303032;
-  text-transform: uppercase;
-}
-
-.last_chance_header_hr {
-  width: 90px;
-  height: 4px;
-  background: #303032;
-  border: 0;
-  margin: 14px 0 0 0;
-}
-
-.last_chance_slider {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.last_chair_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 209px;
-  margin-right: 32px;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
-          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
-  position: relative;
-  margin-bottom: 45px;
-}
-
-.last_chair_hover_top {
-  height: 5px;
-  background: #303032;
-  display: none;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-}
-
-.last_chair_hover_top p {
-  display: none;
-}
-
-.last_chair_hover_bottom {
-  position: absolute;
-  left: 0;
-  bottom: -45px;
-  width: 100%;
-  height: 58px;
-  display: none;
-}
-
-.last_chair_hover_bottom button {
-  cursor: pointer;
-  padding: 0;
-  width: inherit;
-  height: inherit;
-  background: #303032;
-  font: 400 20px "OpenSans-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-  border: 0;
-}
-
-.last_chair_block:hover .last_chair_hover_top {
-  display: inline;
-}
-
-.last_chair_block:hover .last_chair_hover_bottom {
-  display: inline;
-}
-
-.last_chair_hover_bottom button:hover {
-  background: #242425;
-}
-
-.last_chair_hover_bottom button:active {
-  background: #3c3c3f;
-}
-
-.last_chair_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font: 400 14px "OpenSans-Regular", sans-serif;
-  font-size: 16px;
-  line-height: 22px;
-  color: #000000;
-  margin: 31px 0 0 23px;
-}
-
-.last_chair_prices {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font: 600 30px "OpenSans-SemiBold", sans-serif;
-}
-
-.last_chair_price {
-  font-size: 28px;
-  line-height: 38px;
-  color: #303032;
-  margin-right: 11px;
-}
-
-.last_chair_price_sale {
-  font-size: 16px;
-  line-height: 22px;
-  -webkit-text-decoration-line: line-through;
-          text-decoration-line: line-through;
-  color: #979798;
-}
-
-.last_chair_img {
-  max-width: 209px;
-  max-height: 252px;
-  overflow: hidden;
-}
-
-.last_chair_img_img2 {
-  position: relative;
-  left: -92px;
-  top: -69px;
-}
-
-.last_chair_img_img3 {
-  position: relative;
-  left: -7px;
-  top: 6px;
-}
-
-.last_chair_img_img4 {
-  position: relative;
-  left: -79px;
-  top: -52px;
-}
-
-.last_chair_img_img5 {
-  position: relative;
-  left: 47px;
-}
-
-/* Базовый контейнер табов */
-.tabs {
-  padding: 0px;
-  margin: 0 auto;
-}
-
-/* Стили секций с содержанием */
-.tabs > section {
-  display: none;
-  padding: 5px 0 111px 0;
-}
-
-/* Прячем чекбоксы */
-.tabs > input {
-  display: none;
-  position: absolute;
-}
-
-/* Стили переключателей вкладок (табов) */
-.tabs > label {
-  display: inline-block;
-  padding: 15px 48px 25px 0;
-  font: 600 30px "OpenSans-SemiBold", sans-serif;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.4);
-}
-
-/* Изменения стиля переключателей вкладок при наведении */
-.tabs > label:hover {
-  color: #888;
-  cursor: pointer;
-}
-
-/* Стили для активной вкладки */
-.tabs > input:checked + label {
-  color: #000000;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
-/* Активация секций с помощью псевдокласса :checked */
-#tab1:checked ~ #content-tab1 {
-  display: block;
-}
-
-#tab2:checked ~ #content-tab2 {
-  display: block;
-}
-
-#tab3:checked ~ #content-tab3 {
-  display: block;
+  .tabs > label {
+    padding: 8px 48px 25px 0;
+  }
+  .tabs > label:last-of-type {
+    padding-right: 0;
+  }
+  .last_chance_slider {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .last_chance_slider .slick-dots {
+    left: 230px;
+  }
+  .last_chance_slider .slick-dots::after {
+    content: '';
+    width: 218px;
+    height: 4px;
+    position: relative;
+    background: rgba(20, 18, 21, 0.1);
+    right: 70px;
+    margin: auto 0;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after {
+    width: 43px;
+    right: 245px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after {
+    width: 43px;
+    right: 202px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after {
+    width: 43px;
+    right: 158px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after {
+    width: 43px;
+    right: 114px;
+  }
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after {
+    width: 43px;
+    right: 70px;
+  }
 }
