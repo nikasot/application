@@ -930,35 +930,6 @@ h1, h2, h3, h4, p {
   .slick2-next {
     right: 10%;
   }
-  .slick-slide .last_chair_text {
-    font-size: 14px;
-  }
-  .slick-slide .last_chair_price {
-    font-size: 26px;
-  }
-  .slick-slide .last_chair_price_sale {
-    font-size: 14px;
-  }
-  .slick-slide .last_chair_img_img1 {
-    position: relative;
-    left: -50px;
-  }
-  .slick-slide .last_chair_img_img2 {
-    left: -140px;
-  }
-  .slick-slide .last_chair_img_img3 {
-    left: -50px;
-    top: 6px;
-  }
-  .slick-slide .last_chair_img_img4 {
-    position: relative;
-    left: -120px;
-    top: -52px;
-  }
-  .slick-slide .last_chair_img_img5 {
-    position: relative;
-    left: -2px;
-  }
 }
 
 @media screen and (max-width: 1023px) {
@@ -1448,7 +1419,7 @@ h1, h2, h3, h4, p {
 }
 
 .last_chance_wrapper {
-  padding-top: 73px;
+  padding: 73px 0 66px 0;
 }
 
 .last_chance_header {
@@ -1664,6 +1635,14 @@ h1, h2, h3, h4, p {
 }
 
 /* Активация секций с помощью псевдокласса :checked */
-#tab1:checked ~ #content-tab1, #tab2:checked ~ #content-tab2, #tab3:checked ~ #content-tab3 {
+#tab1:checked ~ #content-tab1 {
+  display: block;
+}
+
+#tab2:checked ~ #content-tab2 {
+  display: block;
+}
+
+#tab3:checked ~ #content-tab3 {
   display: block;
 }

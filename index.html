@@ -422,10 +422,13 @@
                 // запрещает продвигать слайд во время анимации default: true
                 responsive: [
                   {
-                    breakpoint: 767,
+                    breakpoint: 1439,
                     settings: {
-                      vertical: false,
-                      touchThreshold: 250 //Чтобы продвинуть слайды, пользователь должен провести пальцем по длине (1 / touchThreshold) * ширину слайдера. default:5
+                      slidesToShow: 4
+                    },
+                    breakpoint: 991,
+                    settings: {
+                      slidesToShow: 3
                     }
                   }
                   // You can unslick at a given breakpoint now by adding:

@@ -1,7 +1,7 @@
 .last_chance
     background-image: linear-gradient(180deg, transparent 0%, transparent 76%, #F9FDFF 76% 100%), linear-gradient(90deg,  #FAECE9 54%, #F9FDFF 54%),
 .last_chance_wrapper
-    padding-top: 73px
+    padding: 73px 0 66px 0
 .last_chance_header
     margin-bottom: 22px
 .last_chance_header h2
@@ -143,7 +143,11 @@
     color: #000000
     text-decoration-line: underline
 /* Активация секций с помощью псевдокласса :checked */
-#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3
+#tab1:checked~#content-tab1
+    display: block
+#tab2:checked~#content-tab2
+    display: block
+#tab3:checked~#content-tab3
     display: block
 
 // slick
