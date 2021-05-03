@@ -439,6 +439,7 @@ h1, h2, h3, h4, p {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  align-items: flex-end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -882,8 +883,8 @@ h1, h2, h3, h4, p {
 }
 
 .last_chance {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(76%, transparent), color-stop(76%, #F9FDFF)), -webkit-gradient(linear, left top, right top, color-stop(54%, #FAECE9), color-stop(54%, #F9FDFF));
-  background-image: linear-gradient(180deg, transparent 0%, transparent 76%, #F9FDFF 76% 100%), linear-gradient(90deg, #FAECE9 54%, #F9FDFF 54%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(68%, transparent), color-stop(68%, #F9FDFF)), -webkit-gradient(linear, left top, right top, color-stop(54%, #FAECE9), color-stop(54%, #F9FDFF));
+  background-image: linear-gradient(180deg, transparent 0%, transparent 68%, #F9FDFF 68% 100%), linear-gradient(90deg, #FAECE9 54%, #F9FDFF 54%);
 }
 
 .last_chance_wrapper {
@@ -911,7 +912,7 @@ h1, h2, h3, h4, p {
   margin: 14px 0 0 0;
 }
 
-.last_chance_slider {
+.last_chance_slider, .last_chance_slider2, .last_chance_slider3 {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -1309,6 +1310,26 @@ h1, h2, h3, h4, p {
   .slick2-next {
     right: 10%;
   }
+  .last_chance_slider2 .last_chair_block, .last_chance_slider3 .last_chair_block {
+    max-width: 179px !important;
+    margin-right: 16px;
+  }
+  .last_chance_slider2 .last_chair_block .last_chair_img .last_chair_img_img1, .last_chance_slider3 .last_chair_block .last_chair_img .last_chair_img_img1 {
+    position: relative;
+    left: -30px;
+  }
+  .last_chance_slider2 .last_chair_block .last_chair_img .last_chair_img_img2, .last_chance_slider3 .last_chair_block .last_chair_img .last_chair_img_img2 {
+    left: -122px;
+  }
+  .last_chance_slider2 .last_chair_block .last_chair_img .last_chair_img_img3, .last_chance_slider3 .last_chair_block .last_chair_img .last_chair_img_img3 {
+    left: -37px;
+  }
+  .last_chance_slider2 .last_chair_block .last_chair_img .last_chair_img_img4, .last_chance_slider3 .last_chair_block .last_chair_img .last_chair_img_img4 {
+    left: -109px;
+  }
+  .last_chance_slider2 .last_chair_block .last_chair_img .last_chair_img_img5, .last_chance_slider3 .last_chair_block .last_chair_img .last_chair_img_img5 {
+    left: 17px;
+  }
   .bottom_menu_contacts {
     width: 40%;
   }
@@ -1329,6 +1350,9 @@ h1, h2, h3, h4, p {
   }
   .new-right_img img {
     max-width: 445px;
+  }
+  .last_chance_slider2 .last_chair_block, .last_chance_slider3 .last_chair_block {
+    max-width: 172px !important;
   }
 }
 
@@ -1395,6 +1419,12 @@ h1, h2, h3, h4, p {
   }
   .bottom_menu_contacts {
     width: 50%;
+  }
+  .last_chance_slider2 .last_chair_block, .last_chance_slider3 .last_chair_block {
+    max-width: 164px !important;
+  }
+  .last_chance_slider2 .last_chair_block:nth-child(5), .last_chance_slider3 .last_chair_block:nth-child(5) {
+    display: none !important;
   }
 }
 
@@ -1476,7 +1506,14 @@ h1, h2, h3, h4, p {
     height: 58px;
     margin-top: 30px;
     padding: 0;
+  }
+  .last_chance_slider2, .last_chance_slider3 {
     /* перебивка точек слайдера на цифры*/
+  }
+  .last_chance_slider2 .last_chair_block:nth-child(5), .last_chance_slider3 .last_chair_block:nth-child(5) {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .slick-dots {
     position: relative;
@@ -1740,33 +1777,34 @@ h1, h2, h3, h4, p {
   .tabs > label:last-of-type {
     padding-right: 0;
   }
-  .last_chance_slider {
+  .last_chance_slider, .last_chance_slider2, .last_chance_slider3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .last_chance_slider .last_chair_block {
+  .last_chance_slider .last_chair_block, .last_chance_slider2 .last_chair_block, .last_chance_slider3 .last_chair_block {
     max-width: 100% !important;
     margin-right: 0;
     position: relative;
     margin-bottom: 0;
   }
-  .last_chance_slider .last_chair_block .last_chair_text {
+  .last_chance_slider .last_chair_block .last_chair_text, .last_chance_slider2 .last_chair_block .last_chair_text, .last_chance_slider3 .last_chair_block .last_chair_text {
     padding-bottom: 18px;
   }
-  .last_chance_slider .last_chair_block .last_chair_img {
+  .last_chance_slider .last_chair_block .last_chair_img, .last_chance_slider2 .last_chair_block .last_chair_img, .last_chance_slider3 .last_chair_block .last_chair_img {
     -ms-flex-item-align: end;
         -ms-grid-row-align: end;
         align-self: end;
+    align-self: flex-end;
   }
-  .last_chance_slider .last_chair_block:hover .last_chair_hover_top {
+  .last_chance_slider .last_chair_block:hover .last_chair_hover_top, .last_chance_slider2 .last_chair_block:hover .last_chair_hover_top, .last_chance_slider3 .last_chair_block:hover .last_chair_hover_top {
     display: none;
   }
-  .last_chance_slider .last_chair_block:hover .last_chair_hover_bottom {
+  .last_chance_slider .last_chair_block:hover .last_chair_hover_bottom, .last_chance_slider2 .last_chair_block:hover .last_chair_hover_bottom, .last_chance_slider3 .last_chair_block:hover .last_chair_hover_bottom {
     display: none;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::before {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::before, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control00::before, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control00::before {
     cursor: default;
     width: inherit;
     height: inherit;
@@ -1780,7 +1818,7 @@ h1, h2, h3, h4, p {
     top: 0;
     display: inherit;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control00::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control00::after {
     content: '';
     width: 60px;
     height: 4px;
@@ -1790,7 +1828,7 @@ h1, h2, h3, h4, p {
     top: initial;
     bottom: 11px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::before {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::before, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control01::before, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control01::before {
     cursor: default;
     width: inherit;
     height: inherit;
@@ -1804,7 +1842,7 @@ h1, h2, h3, h4, p {
     top: 0;
     display: inherit;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control01::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control01::after {
     content: '';
     width: 60px;
     height: 4px;
@@ -1814,7 +1852,7 @@ h1, h2, h3, h4, p {
     top: initial;
     bottom: 11px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::before {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::before, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control02::before, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control02::before {
     cursor: default;
     width: inherit;
     height: inherit;
@@ -1828,7 +1866,7 @@ h1, h2, h3, h4, p {
     top: 0;
     display: inherit;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control02::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control02::after {
     content: '';
     width: 60px;
     height: 4px;
@@ -1838,7 +1876,7 @@ h1, h2, h3, h4, p {
     top: initial;
     bottom: 11px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::before {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::before, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control03::before, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control03::before {
     cursor: default;
     width: inherit;
     height: inherit;
@@ -1852,7 +1890,7 @@ h1, h2, h3, h4, p {
     top: 0;
     display: inherit;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control03::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control03::after {
     content: '';
     width: 60px;
     height: 4px;
@@ -1862,7 +1900,7 @@ h1, h2, h3, h4, p {
     top: initial;
     bottom: 11px;
   }
-  .last_chance_slider .slick-dots li #slick-slide-control04::before {
+  .last_chance_slider .slick-dots li #slick-slide-control04::before, .last_chance_slider2 .slick-dots li #slick-slide-control04::before, .last_chance_slider3 .slick-dots li #slick-slide-control04::before {
     cursor: default;
     width: inherit;
     height: inherit;
@@ -1877,7 +1915,7 @@ h1, h2, h3, h4, p {
     display: none;
     z-index: -1;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::before {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::before, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control04::before, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control04::before {
     cursor: default;
     width: inherit;
     height: inherit;
@@ -1891,7 +1929,7 @@ h1, h2, h3, h4, p {
     top: 0;
     display: inherit;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control04::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control04::after {
     content: '';
     width: 60px;
     height: 4px;
@@ -1976,26 +2014,26 @@ h1, h2, h3, h4, p {
   .tabs > label {
     padding: 8px 78px 25px 0;
   }
-  .last_chance_slider .slick-dots::after {
+  .last_chance_slider .slick-dots::after, .last_chance_slider2 .slick-dots::after, .last_chance_slider3 .slick-dots::after {
     width: 270px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control00::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control00::after {
     width: 54px;
     right: 286px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control01::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control01::after {
     width: 54px;
     right: 232px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control02::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control02::after {
     width: 54px;
     right: 178px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control03::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control03::after {
     width: 54px;
     right: 124px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control04::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control04::after {
     width: 54px;
     right: 70px;
   }
@@ -2045,16 +2083,16 @@ h1, h2, h3, h4, p {
   .tabs > label:last-of-type {
     padding-right: 0;
   }
-  .last_chance_slider {
+  .last_chance_slider, .last_chance_slider2, .last_chance_slider3 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .last_chance_slider .slick-dots {
+  .last_chance_slider .slick-dots, .last_chance_slider2 .slick-dots, .last_chance_slider3 .slick-dots {
     left: 230px;
   }
-  .last_chance_slider .slick-dots::after {
+  .last_chance_slider .slick-dots::after, .last_chance_slider2 .slick-dots::after, .last_chance_slider3 .slick-dots::after {
     content: '';
     width: 218px;
     height: 4px;
@@ -2063,23 +2101,23 @@ h1, h2, h3, h4, p {
     right: 70px;
     margin: auto 0;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control00::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control00::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control00::after {
     width: 43px;
     right: 245px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control01::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control01::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control01::after {
     width: 43px;
     right: 202px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control02::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control02::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control02::after {
     width: 43px;
     right: 158px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control03::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control03::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control03::after {
     width: 43px;
     right: 114px;
   }
-  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after {
+  .last_chance_slider .slick-dots li.slick-active #slick-slide-control04::after, .last_chance_slider2 .slick-dots li.slick-active #slick-slide-control04::after, .last_chance_slider3 .slick-dots li.slick-active #slick-slide-control04::after {
     width: 43px;
     right: 70px;
   }

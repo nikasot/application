@@ -40,6 +40,22 @@
         left: 10%
     .slick2-next 
         right: 10%
+    .last_chance_slider2, .last_chance_slider3
+        .last_chair_block
+            max-width: 179px !important
+            margin-right: 16px
+            .last_chair_img 
+                .last_chair_img_img1
+                    position: relative
+                    left: -30px
+                .last_chair_img_img2
+                    left: -122px
+                .last_chair_img_img3
+                    left: -37px
+                .last_chair_img_img4
+                    left: -109px
+                .last_chair_img_img5
+                    left: 17px
     .bottom_menu_contacts
         width: 40%
 @media screen and ( max-width: 1023px  )
@@ -53,6 +69,9 @@
         width: 445px  
     .new-right_img img
         max-width: 445px
+    .last_chance_slider2, .last_chance_slider3
+        .last_chair_block
+            max-width: 172px !important
 @media screen and ( max-width: 991px  )
     .header-menu_left
         width: 55%
@@ -99,6 +118,11 @@
         width: 60%
     .bottom_menu_contacts
         width: 50%
+    .last_chance_slider2, .last_chance_slider3
+        .last_chair_block
+            max-width: 164px !important
+        .last_chair_block:nth-child(5)
+            display: none !important
 @media screen and ( max-width: 767px  )
     .container
         width: 393px
@@ -156,6 +180,9 @@
         height: 58px
         margin-top: 30px
         padding: 0
+    .last_chance_slider2, .last_chance_slider3
+        .last_chair_block:nth-child(5)
+            display: flex !important
         /* перебивка точек слайдера на цифры*/
     .slick-dots 
         position: relative   
@@ -383,7 +410,7 @@
     .tabs>label:last-of-type
         padding-right: 0
     
-    .last_chance_slider
+    .last_chance_slider, .last_chance_slider2, .last_chance_slider3
         flex-direction: column
         .last_chair_block 
             max-width: 100% !important
@@ -394,6 +421,7 @@
                 padding-bottom: 18px
             .last_chair_img
                 align-self: end
+                align-self: flex-end
         .last_chair_block:hover .last_chair_hover_top
             display: none
         .last_chair_block:hover .last_chair_hover_bottom
@@ -566,7 +594,7 @@
         right: 70px
     .tabs>label
         padding: 8px 78px 25px 0
-    .last_chance_slider
+    .last_chance_slider, .last_chance_slider2, .last_chance_slider3
         .slick-dots::after
             width: 270px
         .slick-dots li.slick-active #slick-slide-control00::after
@@ -619,7 +647,7 @@
     .tabs>label:last-of-type
         padding-right: 0
     
-    .last_chance_slider
+    .last_chance_slider, .last_chance_slider2, .last_chance_slider3
         flex-direction: column
         .slick-dots 
             left: 230px

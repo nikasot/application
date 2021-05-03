@@ -56,7 +56,6 @@
           </ul>
         </div>
       </div>
-      
       <div class="disign-block_slider">
         <div class="design-block">
           <div class="design-text">
@@ -116,9 +115,7 @@
         </div>
       </div>
       <script src="slick-slider/jquery.js"></script>
-      <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
       <script src="slick-slider/slick.min.js"></script>
-
       <script>
         $('.disign-block_slider').slick({
           dots:true,
@@ -137,17 +134,11 @@
                 touchThreshold: 250 //Чтобы продвинуть слайды, пользователь должен провести пальцем по длине (1 / touchThreshold) * ширину слайдера. default:5
               }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
           ]
 
         });
       </script>
-
-  
-      </div>
-      </div>
+    </div>
   </section>
   <section class="new_furniture">
     <div class="container">
@@ -266,7 +257,6 @@
           vertical: false, // вертикальный слайдер
           verticalSwiping: false,
           waitForAnimate: true, // запрещает продвигать слайд во время анимации default: true
-
         });
       </script>
     </div>
@@ -278,17 +268,13 @@
           <h2>Последний шанс</h2>
           <hr class="last_chance_header_hr">
         </div>
-        
         <div class="tabs">
           <input id="tab1" type="radio" name="tabs" checked>
           <label for="tab1" title="Вкладка 1">Стулья</label>
-      
           <input id="tab2" type="radio" name="tabs">
           <label for="tab2" title="Вкладка 2">Диваны</label>
-      
           <input id="tab3" type="radio" name="tabs">
           <label for="tab3" title="Вкладка 3">Кресла</label>
-      
           <section id="content-tab1">
             <div class="last_chance_slider">
               <div class="last_chair_block">
@@ -381,38 +367,19 @@
                   <button>купить</button>
                 </div>
               </div>
-              <!-- <div class="last_chair_block extra_block">
-                <div class="last_chair_hover_top">
-                  <p>hover_top</p>
-                </div>
-                <div class="last_chair_text">
-                  <p>Стул «Сова»</p>
-                  <div class="last_chair_prices">
-                    <p class="last_chair_price">$240</p>
-                    <p class="last_chair_price_sale">$260</p>
-                  </div>
-                </div>
-                <div class="last_chair_img">
-                  <img class="last_chair_img_img3" src="img/last_chair3.png" alt="">
-                </div> 
-                <div class="last_chair_hover_bottom">
-                  <button>купить</button>
-                </div>
-              </div> -->
             </div> 
             <script src="slick-slider/jquery.js"></script>
             <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
             <script src="slick-slider/slick.min.js"></script>
-
             <script>
               $('.last_chance_slider').slick({
                 dots:false,
                 autoplay:true,
+                infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplaySpeed: 1000, //default 3000
                 arrows: false,
-                // easing: 'linear',
                 useCSS: false,
                 speed: 7000, //default 300
                 vertical: false, // вертикальный слайдер
@@ -445,12 +412,11 @@
                     }
                   }
                 ]
-
               });
             </script> 
           </section>  
           <section id="content-tab2">
-            <div class="last_chance_slider">
+            <div class="last_chance_slider2">
               <div class="last_chair_block">
                 <div class="last_chair_hover_top">
                   <p>hover_top</p>
@@ -463,7 +429,7 @@
                   </div>
                 </div>
                 <div class="last_chair_img">
-                  <img src="img/last_chair1.png" alt="">
+                  <img class="last_chair_img_img1" src="img/last_chair1.png" alt="">
                 </div>
                 <div class="last_chair_hover_bottom">
                   <button>купить</button>
@@ -542,9 +508,38 @@
                 </div>
               </div>
             </div> 
+            <script src="slick-slider/jquery.js"></script>
+            <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+            <script src="slick-slider/slick.min.js"></script>
+            <script>
+              $('.last_chance_slider2').slick({
+                dots:false,
+                autoplay:false,
+                slidesToShow: 5,
+                responsive: [
+                  {
+                    breakpoint: 3000,
+                    settings: "unslick"
+                  },
+                  {
+                    breakpoint: 767,
+                    settings: {
+                      
+                      slidesToShow: 1,
+                      dots:true,
+                      autoplay:false,
+                      autoplaySpeed: 3000, 
+                      arrows: false,
+                      speed: 1000, 
+                      waitForAnimate: false,
+                    }
+                  }
+                ]
+              });
+            </script>  
           </section> 
           <section id="content-tab3">
-            <div class="last_chance_slider">
+            <div class="last_chance_slider3">
               <div class="last_chair_block">
                 <div class="last_chair_hover_top">
                   <p>hover_top</p>
@@ -557,7 +552,7 @@
                   </div>
                 </div>
                 <div class="last_chair_img">
-                  <img src="img/last_chair1.png" alt="">
+                  <img class="last_chair_img_img1" src="img/last_chair1.png" alt="">
                 </div>
                 <div class="last_chair_hover_bottom">
                   <button>купить</button>
@@ -636,8 +631,36 @@
                 </div>
               </div>
             </div> 
+            <script src="slick-slider/jquery.js"></script>
+            <!-- <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+            <script src="slick-slider/slick.min.js"></script>
+            <script>
+              $('.last_chance_slider3').slick({
+                dots:false,
+                autoplay:false,
+                slidesToShow: 5,
+                responsive: [
+                  {
+                    breakpoint: 3000,
+                    settings: "unslick"
+                  },
+                  {
+                    breakpoint: 767,
+                    settings: {
+                      
+                      slidesToShow: 1,
+                      dots:true,
+                      autoplay:false,
+                      autoplaySpeed: 3000, 
+                      arrows: false,
+                      speed: 1000, 
+                      waitForAnimate: false,
+                    }
+                  }
+                ]
+              });
+            </script> 
           </section> 
-          
         </div>
       </div>
     </div>
