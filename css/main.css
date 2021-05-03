@@ -1115,28 +1115,28 @@ h1, h2, h3, h4, p {
   display: block;
 }
 
+.bottom_menu {
+  background: #FFFFFF;
+}
+
 .bottom_menu_wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   padding-top: 100px;
-}
-
-.bottom_menu_top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 30px;
+}
+
+.bottom_logo {
+  width: 40%;
 }
 
 .bottom_menu_tabs {
+  margin-bottom: 30px;
   width: 45%;
 }
 
@@ -1177,14 +1177,14 @@ h1, h2, h3, h4, p {
   border-bottom: 1px solid;
 }
 
-.bottom_menu_center {
+.bottom_menu_contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 35%;
+  width: 33%;
   font: 400 16px "Roboto-Regular", sans-serif;
   padding-bottom: 30px;
 }
@@ -1203,7 +1203,7 @@ h1, h2, h3, h4, p {
   text-decoration: none;
 }
 
-.bottom_menu_center p {
+.bottom_menu_contacts p {
   padding-left: 8px;
   line-height: 19px;
   color: #303032;
@@ -1216,15 +1216,28 @@ h1, h2, h3, h4, p {
           transform: matrix(1, 0, 0, 1, 0, 0);
 }
 
-.bottom_menu_licence {
+.bottom_footer_license {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.bottom_menu_license {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  -ms-flex-line-pack: right;
-      align-content: right;
+  justify-content: flex-end;
+}
+
+.bottom_menu_license p {
+  font: 600 14px "AvenirNext-Medium", sans-serif;
   font-weight: 400;
   font-size: 10px;
   line-height: 15px;
@@ -1295,6 +1308,9 @@ h1, h2, h3, h4, p {
   }
   .slick2-next {
     right: 10%;
+  }
+  .bottom_menu_contacts {
+    width: 40%;
   }
 }
 
@@ -1373,6 +1389,12 @@ h1, h2, h3, h4, p {
   }
   .rewiew_comment {
     max-width: 450px;
+  }
+  .bottom_menu_tabs {
+    width: 60%;
+  }
+  .bottom_menu_contacts {
+    width: 50%;
   }
 }
 
@@ -1878,6 +1900,50 @@ h1, h2, h3, h4, p {
     right: 70px;
     top: initial;
     bottom: 11px;
+  }
+  .bottom_menu_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .bottom_logo {
+    margin-bottom: 31px;
+  }
+  .bottom_menu_tabs {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bottom_menu_tabs_ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .bottom_menu_tabs_ul li:nth-child(n) {
+    padding: 0 60px 20px 0;
+  }
+  .bottom_menu_contacts {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 0;
+    margin-bottom: 19px;
+    width: 100%;
+  }
+  .bottom_menu_contacts div {
+    padding-bottom: 20px;
+  }
+  .bottom_menu_license {
+    text-align: center;
   }
 }
 
