@@ -1,14 +1,18 @@
-let leftHalf;
-let rightHalf;
-const isHappyTicket = ticketNumber => {
-    let numberLength = ticketNumber.length;
-    if (numberLength%2===0) {
-        half = numberLength/2;
-        half2=half;
-        return Number(ticketNumber[1])+Number(ticketNumber[0]);
-    } else {
-        return "Введите четное количество цифр";
+const isPerfect = (number) => {
+    if (number>0) {
+        let devidersum=0
+        for (let devider=1; devider <= number/2; devider++) {
+            if (number % devider ===0 ) {
+                devidersum = devidersum + devider;
+            } else {
+                answer = false;
+            }
+            }
+        if (devidersum === number) {
+            answer = true
+        }
+        return answer
     }
     
-};
-console.log(isHappyTicket('4554'));
+}
+console.log(isPerfect(33550336));
