@@ -14,4 +14,4 @@ const natural3 = a => {
         };
     }; return false;
 };
-console.log(natural3(80));
+console.log(natural3(0));
