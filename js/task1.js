@@ -1,4 +1,4 @@
-const natural3 = a => {
+const isPowerOfThree = a => {
     let result = 0;
     let i;
     for (i = a; i>=3; i=i/3 ){
@@ -14,4 +14,4 @@ const natural3 = a => {
         };
     }; return false;
 };
-console.log(natural3(0));
+console.log(isPowerOfThree(9));
