@@ -1,17 +1,13 @@
-const isPowerOfThree = a => {
-    let result = 0;
-    let i;
-    for (i = a; i>=3; i=i/3 ){
-        result = i;
-        if (result === 1) {
-            return true;
-        } else if (result <3) {
-            return false;
-        } else if (result === 3) {
-            return true;
-        } else {
-            a = result;
-        };
-    }; return false;
-};
-console.log(isPowerOfThree(9));
+
+'use strict'; // Строгий режим
+const numbers = [3, 2,-10, 38, 0];
+const calculateMax = (numbers) => {
+    let maxNumber = numbers[0];
+    for (let i=1; i<numbers.length; i ++) {
+        if (maxNumber < numbers[i]) {
+            maxNumber = numbers[i];
+        } 
+    }
+    return maxNumber;
+}
+console.log(calculateMax(numbers));
